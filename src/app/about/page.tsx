@@ -28,7 +28,7 @@ export default async function AboutPage() {
 
   return (
     <HubPageTemplate
-      heading="About Free Recycling Quote"
+      heading="About Recycling Quote"
       subheading="Who We Are"
       intro="We're on a mission to make responsible recycling accessible and simple for every business — with zero landfill commitment and full transparency."
       items={aboutItems}

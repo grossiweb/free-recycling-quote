@@ -12,7 +12,7 @@ import type { Metadata } from 'next'
 export const revalidate = 60
 
 export const metadata: Metadata = {
-  title: 'Free Recycling Quote — Recycling that helps businesses build a sustainable future',
+  title: 'Recycling Quote — Recycling that helps businesses build a sustainable future',
   description: 'Get quick, dependable recycling solutions for end-of-life products, materials, and business waste — with guidance you can trust.',
 }
 

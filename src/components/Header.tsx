@@ -50,7 +50,7 @@ export default function Header() {
     <header className="self-stretch bg-white">
       <div className="flex flex-col md:flex-row justify-between items-center self-stretch bg-white py-4 sm:py-5 md:py-6 lg:py-7 px-4 sm:px-6 md:px-8 lg:px-10 2xl:px-[162px] gap-4 md:gap-0">
         <Link href="/">
-          <Image src="/images/logo.png" alt="Free Recycling Quote" width={192} height={44} className="w-32 sm:w-40 md:w-48 h-auto object-fill" priority />
+          <Image src="/images/logo.png" alt="Recycling Quote" width={192} height={44} className="w-32 sm:w-40 md:w-48 h-auto object-fill" priority />
         </Link>
 
         <div className="hidden md:flex shrink-0 items-center">

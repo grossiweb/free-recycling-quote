@@ -12,14 +12,14 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Free Recycling Quote — Sustainable Business Recycling',
-    template: '%s | Free Recycling Quote',
+    default: 'Recycling Quote — Sustainable Business Recycling',
+    template: '%s | Recycling Quote',
   },
   description: 'Get quick, dependable recycling solutions for end-of-life products, materials, and business waste. Free quotes, fast pickups, zero landfill commitment.',
-  keywords: 'recycling, business recycling, free recycling quote, pallet recycling, electronics recycling, waste management',
+  keywords: 'recycling, business recycling, recycling quote, pallet recycling, electronics recycling, waste management',
   openGraph: {
     type: 'website',
-    siteName: 'Free Recycling Quote',
+    siteName: 'Recycling Quote',
   },
 }
 

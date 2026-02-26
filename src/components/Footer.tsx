@@ -21,7 +21,7 @@ export default function Footer() {
           <Link href="/">
             <Image
               src="/images/footer-logo.png"
-              alt="Free Recycling Quote"
+              alt="Recycling Quote"
               width={180}
               height={82}
               className="w-36 sm:w-44 2xl:w-[180px] h-auto object-contain"
@@ -89,7 +89,7 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="flex flex-col sm:flex-row justify-between items-center self-stretch bg-[#222222] py-4 sm:py-5 px-6 sm:px-10 md:px-14 2xl:px-[120px] gap-3 sm:gap-0">
         <span className="text-white text-xs sm:text-sm font-bold text-center sm:text-left">
-          © Copyright 2023 RecyclingQuote all right reserved
+          © Copyright 2023 Recycling Quote all right reserved
         </span>
         <div className="flex shrink-0 items-center gap-2">
           <Image src="/images/social-fb.png" alt="Facebook" width={29} height={29} className="w-7 h-7 object-contain" />
