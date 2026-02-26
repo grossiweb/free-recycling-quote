@@ -56,7 +56,7 @@ export default function MaterialsSection() {
       <span className="font-display text-[#151515] text-3xl sm:text-4xl md:text-5xl font-bold mb-6 sm:mb-8 md:mb-10 2xl:mb-[52px]">
         Materials We Recycle
       </span>
-      <div className="flex flex-col self-stretch max-w-[1602px] mb-10 sm:mb-12 md:mb-14 2xl:mb-[138px] mx-auto gap-3 sm:gap-4 md:gap-5 2xl:gap-[30px]">
+      <div className="flex flex-col self-stretch mb-10 sm:mb-12 md:mb-14 2xl:mb-[138px] gap-3 sm:gap-4 md:gap-5 2xl:gap-[30px]">
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-4 md:gap-5 2xl:gap-6 self-stretch">
           {row1.map((m) => <IconCard key={m.href} {...m} />)}
         </div>
@@ -68,7 +68,7 @@ export default function MaterialsSection() {
       <span className="font-display text-[#151515] text-3xl sm:text-4xl md:text-5xl font-bold mb-6 sm:mb-8">
         Expert Services
       </span>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-4 md:gap-5 2xl:gap-6 items-center self-stretch max-w-[1602px] mb-10 sm:mb-14 md:mb-16 2xl:mb-[181px] mx-auto">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-4 md:gap-5 2xl:gap-6 items-center self-stretch mb-10 sm:mb-14 md:mb-16 2xl:mb-[181px]">
         {services.map((s) => <IconCard key={s.href} {...s} />)}
       </div>
     </div>
