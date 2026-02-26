@@ -43,7 +43,7 @@ export default function IndustriesSection() {
   return (
     <div className="flex flex-col items-center self-stretch bg-neutral-50 py-10 sm:py-14 md:py-16 2xl:py-[120px] px-4 sm:px-6 md:px-8 rounded-tl-[64px] rounded-tr-[64px]">
       <div className="flex flex-col items-center mb-8 sm:mb-10 md:mb-12 2xl:mb-[94px] gap-3">
-        <span className="text-[#1F1E1E] text-3xl sm:text-4xl md:text-5xl font-bold">
+        <span className="font-display text-[#1F1E1E] text-3xl sm:text-4xl md:text-5xl font-bold">
           Industries We Serve
         </span>
         <span className="text-[#686767] text-base sm:text-lg md:text-xl 2xl:text-[26px] text-center px-4 sm:px-0">

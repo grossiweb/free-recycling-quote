@@ -8,7 +8,8 @@
       "Bash(npx tsc --noEmit)",
       "Bash(timeout 30 npx next build --experimental-https)",
       "Bash(WORDPRESS_API_URL='' npx next lint)",
-      "Bash(npx next lint)"
+      "Bash(npx next lint)",
+      "Bash(npm run build)"
     ],
     "additionalDirectories": [
       "C:\\Users\\Mujahid\\free-recycling-quote\\src\\app\\services",

@@ -13,6 +13,9 @@
     scroll-behavior: smooth;
   }
 
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+  }
   h1 {
     @apply text-4xl md:text-5xl lg:text-[58px] font-black leading-tight text-[#1F1E1E];
   }

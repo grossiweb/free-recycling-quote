@@ -18,6 +18,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ['var(--font-inter)', 'Inter', 'system-ui', 'sans-serif'],
+        display: ['SF Pro Display', '-apple-system', 'BlinkMacSystemFont', 'Helvetica Neue', 'Arial', 'sans-serif'],
       },
     },
   },

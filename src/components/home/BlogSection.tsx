@@ -47,7 +47,7 @@ export default function BlogSection({ posts }: BlogSectionProps) {
 
   return (
     <div className="flex flex-col items-center self-stretch bg-white py-10 sm:py-14 md:py-16 2xl:py-[110px] px-4 sm:px-6 md:px-10 2xl:px-[168px]">
-      <span className="text-[#1F1E1E] text-3xl sm:text-4xl md:text-5xl font-bold mb-8 sm:mb-10 md:mb-12 2xl:mb-[94px]">
+      <span className="font-display text-[#1F1E1E] text-3xl sm:text-4xl md:text-5xl font-bold mb-8 sm:mb-10 md:mb-12 2xl:mb-[94px]">
         The Business Side of Sustainability
       </span>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 items-start self-stretch w-full">

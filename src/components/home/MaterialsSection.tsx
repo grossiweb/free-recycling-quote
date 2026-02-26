@@ -40,7 +40,7 @@ function IconCard({ label, img, href }: { label: string; img: string; href: stri
         height={81}
         className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 2xl:w-[81px] 2xl:h-[81px] object-contain"
       />
-      <span className="text-[#686767] text-[11px] sm:text-xs md:text-sm 2xl:text-[18px] text-center leading-tight">
+      <span className="font-display text-[#686767] text-[11px] sm:text-xs md:text-sm 2xl:text-[18px] font-medium text-center leading-tight">
         {label}
       </span>
     </Link>
@@ -53,7 +53,7 @@ export default function MaterialsSection() {
 
   return (
     <div className="flex flex-col items-center self-stretch bg-white pt-10 sm:pt-14 md:pt-16 2xl:pt-[120px] px-4 sm:px-6 lg:px-10 2xl:px-[168px]">
-      <span className="text-[#151515] text-3xl sm:text-4xl md:text-5xl font-bold mb-6 sm:mb-8 md:mb-10 2xl:mb-[52px]">
+      <span className="font-display text-[#151515] text-3xl sm:text-4xl md:text-5xl font-bold mb-6 sm:mb-8 md:mb-10 2xl:mb-[52px]">
         Materials We Recycle
       </span>
       <div className="flex flex-col self-stretch max-w-[1602px] mb-10 sm:mb-12 md:mb-14 2xl:mb-[138px] mx-auto gap-3 sm:gap-4 md:gap-5 2xl:gap-[30px]">
@@ -65,7 +65,7 @@ export default function MaterialsSection() {
         </div>
       </div>
 
-      <span className="text-[#151515] text-3xl sm:text-4xl md:text-5xl font-bold mb-6 sm:mb-8">
+      <span className="font-display text-[#151515] text-3xl sm:text-4xl md:text-5xl font-bold mb-6 sm:mb-8">
         Expert Services
       </span>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-4 md:gap-5 2xl:gap-6 items-center self-stretch max-w-[1602px] mb-10 sm:mb-14 md:mb-16 2xl:mb-[181px] mx-auto">

@@ -7,7 +7,7 @@ export default function HeroSection() {
       className="flex flex-col items-center self-stretch bg-cover bg-center py-12 sm:py-16 md:py-20 lg:py-28 2xl:py-[216px] gap-0.5 px-4 sm:px-6 lg:px-8"
       style={{ backgroundImage: "url('/images/hero-bg.png')" }}
     >
-      <span className="text-[#1F1E1E] text-2xl sm:text-3xl md:text-4xl lg:text-5xl 2xl:text-[58px] font-bold text-center w-full max-w-[991px] px-4 sm:px-6 lg:px-[39px]">
+      <span className="font-display text-[#1F1E1E] text-2xl sm:text-3xl md:text-4xl lg:text-5xl 2xl:text-[58px] font-bold text-center w-full max-w-[991px] px-4 sm:px-6 lg:px-[39px]">
         Recycling that helps businesses build a more sustainable future
       </span>
       <div className="flex flex-col items-center">
