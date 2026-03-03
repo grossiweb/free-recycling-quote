@@ -1,6 +1,7 @@
 'use client'
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 
 const navItems = [
@@ -143,16 +144,8 @@ export default function Header() {
       <header className={`fixed top-0 left-0 right-0 z-[1000] bg-white border-b border-[#ebebeb] h-[72px] transition-shadow duration-300 ${scrolled ? 'shadow-md' : ''}`}>
         <div className="max-w-[1200px] mx-auto px-6 flex items-center justify-between h-full">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 font-extrabold text-lg text-[#1a1a1a] z-[1100]">
-            <div className="w-9 h-9 bg-[#2DB446] rounded-lg flex items-center justify-center">
-              <svg viewBox="0 0 24 24" className="w-5 h-5 fill-white">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
-              </svg>
-            </div>
-            <div>
-              <div className="leading-none">recycling</div>
-              <div className="text-xs font-semibold text-[#737373] leading-none">quotes</div>
-            </div>
+          <Link href="/" className="z-[1100]">
+            <Image src="/images/logo.png" alt="Recycling Quotes" width={192} height={44} className="w-32 sm:w-40 md:w-48 h-auto object-contain" priority />
           </Link>
 
           {/* Desktop nav */}
