@@ -65,9 +65,9 @@ export default function ImpactsSection() {
           </div>
         ))}
       </div>
-      <div className="flex flex-row items-stretch self-stretch bg-neutral-50 max-w-[1584px] py-8 sm:py-10 md:py-12 2xl:py-[68px] mx-auto rounded-2xl w-full divide-x divide-gray-200">
-        {stats.map((s) => (
-          <div key={s.label} className="flex flex-col items-center justify-center gap-2 flex-1 px-3 sm:px-6 md:px-8">
+      <div className="grid grid-cols-2 sm:grid-cols-4 items-stretch self-stretch bg-neutral-50 max-w-[1584px] py-8 sm:py-10 md:py-12 2xl:py-[68px] mx-auto rounded-2xl w-full">
+        {stats.map((s, i) => (
+          <div key={s.label} className={`flex flex-col items-center justify-center gap-2 px-3 sm:px-6 md:px-8 py-4 sm:py-0 ${i % 2 !== 0 ? 'border-l border-gray-200' : ''} ${i >= 2 ? 'border-t sm:border-t-0 sm:border-l border-gray-200' : ''}`}>
             <span className="text-[#0B0B0B] text-xl sm:text-2xl md:text-3xl 2xl:text-[47px] font-bold text-center">
               {s.value}
             </span>
