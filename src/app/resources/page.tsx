@@ -1,75 +1,88 @@
 import React from 'react'
 import Link from 'next/link'
+import WpContent from '@/components/shared/WpContent'
+import FinalCTA from '@/components/shared/FinalCTA'
+import { getWordPressData } from '@/lib/wordpress'
+import { GET_PAGE } from '@/lib/queries'
+import { fetchHeroDataByUri } from '@/lib/hero'
 import type { Metadata } from 'next'
 
 export const revalidate = 60
 
 export const metadata: Metadata = {
   title: 'Resources',
-  description: 'Explore our recycling resources — blog articles, FAQs, educational videos, and guides for businesses.',
+  description: 'Insights, guides, and answers to help your business recycle smarter.',
 }
 
-const sections = [
-  {
-    title: 'Blog',
-    desc: 'Industry insights, case studies, and recycling tips to help your business build a more sustainable future.',
-    href: '/resources/blog',
-    icon: '📝',
-  },
-  {
-    title: 'FAQ',
-    desc: 'Answers to the most common questions about our recycling services, pricing, and processes.',
-    href: '/resources/faq',
-    icon: '❓',
-  },
-  {
-    title: 'Videos',
-    desc: 'Educational videos and walkthroughs showing our recycling processes and program setup.',
-    href: '/resources/videos',
-    icon: '🎥',
-  },
+const resourceCards = [
+  { tag: 'Blog', emoji: '\u267B\uFE0F', title: 'Journey Into Sustainable Recycling', desc: 'How businesses are rethinking waste management for a circular economy.', href: '/resources/blog' },
+  { tag: 'Blog', emoji: '\uD83C\uDF0D', title: 'ESG Reporting: What Your Stakeholders Want to See', desc: 'A practical guide to environmental metrics that matter.', href: '/resources/blog' },
+  { tag: 'Video', emoji: '\uD83C\uDFAC', title: 'How Pallet Recycling Works', desc: 'A behind-the-scenes look at our pallet recovery and processing facility.', href: '/resources/videos' },
+  { tag: 'Blog', emoji: '\uD83D\uDCCA', title: 'Reducing Waste Disposal Costs for Manufacturers', desc: 'Practical strategies that cut costs while improving sustainability.', href: '/resources/blog' },
+  { tag: 'FAQ', emoji: '\u2753', title: 'Top 10 Questions About Business Recycling', desc: 'Answers to the most common questions we hear from new clients.', href: '/resources/faq' },
+  { tag: 'Video', emoji: '\uD83C\uDFAC', title: 'Inside Our Material Sorting Facility', desc: 'See how we process and sort mixed recyclable materials.', href: '/resources/videos' },
 ]
 
-export default function ResourcesPage() {
+export default async function ResourcesPage() {
+  let wpContent = ''
+  try {
+    const data = await getWordPressData<any>(GET_PAGE, { id: '/resources/', idType: 'URI' })
+    wpContent = data?.page?.content || ''
+  } catch {}
+  const heroData = await fetchHeroDataByUri('/resources/')
+
   return (
-    <div className="bg-white">
-      <section className="bg-gradient-to-br from-neutral-50 to-emerald-50 py-20 lg:py-28">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-10 text-center">
-          <p className="text-[#686767] text-sm font-bold uppercase tracking-widest mb-3">Resources</p>
-          <h1 className="text-[#1F1E1E] text-4xl lg:text-5xl font-black mb-6">
-            Knowledge Center
+    <div>
+      {/* Hero */}
+      <section className="pt-[70px] pb-10 text-center">
+        <div className="max-w-[1200px] mx-auto px-6">
+          <h1 className="text-[44px] md:text-4xl sm:text-[28px] font-extrabold mb-3">
+            {heroData.subtitle || 'Resources'}
           </h1>
-          <p className="text-[#686767] text-xl lg:text-2xl max-w-3xl mx-auto leading-relaxed">
-            Everything you need to understand recycling, build better programs, and stay compliant.
+          <p className="text-[17px] text-[#525252] max-w-[480px] mx-auto mb-8">
+            {heroData.description || 'Insights, guides, and answers to help your business recycle smarter.'}
           </p>
+          <div className="flex justify-center gap-2 flex-wrap">
+            <Link href="/resources" className="px-6 py-2.5 rounded-full text-sm font-semibold bg-[#2DB446] text-white border border-[#2DB446]">All</Link>
+            <Link href="/resources/blog" className="px-6 py-2.5 rounded-full text-sm font-semibold border border-[#ebebeb] text-[#404040] hover:bg-[#f7f7f7] transition-colors">Blog</Link>
+            <Link href="/resources/videos" className="px-6 py-2.5 rounded-full text-sm font-semibold border border-[#ebebeb] text-[#404040] hover:bg-[#f7f7f7] transition-colors">Videos</Link>
+            <Link href="/resources/faq" className="px-6 py-2.5 rounded-full text-sm font-semibold border border-[#ebebeb] text-[#404040] hover:bg-[#f7f7f7] transition-colors">FAQs</Link>
+          </div>
         </div>
       </section>
 
-      <section className="py-20 lg:py-28">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {sections.map((s) => (
-              <Link
-                key={s.href}
-                href={s.href}
-                className="group flex flex-col bg-neutral-50 hover:bg-emerald-50 rounded-2xl p-10 transition-colors border border-transparent hover:border-[#4BE576]"
-              >
-                <span className="text-5xl mb-6">{s.icon}</span>
-                <h2 className="text-[#111112] text-2xl font-bold mb-3 group-hover:text-[#4BE576] transition-colors">
-                  {s.title}
-                </h2>
-                <p className="text-[#686767] text-base leading-relaxed flex-1">{s.desc}</p>
-                <span className="mt-6 inline-flex items-center gap-2 text-[#4BE576] font-bold text-sm">
-                  Explore {s.title}
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                  </svg>
-                </span>
+      {wpContent && (
+        <section className="py-8 bg-white">
+          <div className="max-w-[900px] mx-auto px-6">
+            <WpContent html={wpContent} />
+          </div>
+        </section>
+      )}
+
+      {/* Resource Cards Grid */}
+      <section className="pb-20">
+        <div className="max-w-[1200px] mx-auto px-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {resourceCards.map((card, i) => (
+              <Link key={i} href={card.href} className="rounded-xl overflow-hidden border border-[#ebebeb] transition-all duration-300 hover:shadow-md hover:-translate-y-[3px] group">
+                <div className="aspect-[16/10] overflow-hidden bg-gradient-to-br from-[#e8f5eb] to-[rgba(45,180,70,.15)] flex items-center justify-center text-4xl">
+                  {card.emoji}
+                </div>
+                <div className="p-5">
+                  <span className="inline-block text-[11px] font-bold uppercase tracking-[1px] text-[#2DB446] mb-2">{card.tag}</span>
+                  <h3 className="text-base font-bold mb-1.5">{card.title}</h3>
+                  <p className="text-sm text-[#525252] leading-relaxed mb-3.5">{card.desc}</p>
+                  <span className="text-sm font-semibold text-[#2DB446] inline-flex items-center gap-1">
+                    Read More <span className="material-symbols-outlined text-base">arrow_forward</span>
+                  </span>
+                </div>
               </Link>
             ))}
           </div>
         </div>
       </section>
+
+      <FinalCTA />
     </div>
   )
 }

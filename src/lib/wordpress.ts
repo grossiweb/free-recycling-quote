@@ -29,6 +29,22 @@ export async function getWordPressData<T = any>(
   variables?: Record<string, unknown>
 ): Promise<T> {
   const queryString = typeof query === 'string' ? query : print(query)
-  const data = await graphqlClient.request<T>(queryString, variables)
-  return data
+
+  // Use native fetch so Next.js App Router respects revalidation
+  const res = await fetch(WORDPRESS_API_URL, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ query: queryString, variables }),
+    next: { revalidate: 60 },
+  })
+
+  if (!res.ok) {
+    throw new Error(`WordPress GraphQL request failed: ${res.status}`)
+  }
+
+  const json = await res.json()
+  if (json.errors?.length) {
+    throw new Error(json.errors[0].message)
+  }
+  return json.data as T
 }

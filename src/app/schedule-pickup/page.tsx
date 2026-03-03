@@ -1,92 +1,89 @@
 import React from 'react'
 import ContactForm from '@/components/shared/ContactForm'
+import WpContent from '@/components/shared/WpContent'
+import FinalCTA from '@/components/shared/FinalCTA'
+import { getWordPressData } from '@/lib/wordpress'
+import { GET_PAGE } from '@/lib/queries'
+import { fetchHeroDataByUri } from '@/lib/hero'
 import type { Metadata } from 'next'
+
+export const revalidate = 60
 
 export const metadata: Metadata = {
   title: 'Schedule a Pickup',
-  description: 'Schedule a free recycling pickup for your business. We offer flexible scheduling including same-week service.',
+  description: 'Tell us about your materials and preferred schedule — we\'ll handle the rest.',
 }
 
-const steps = [
-  { step: '1', title: 'Fill Out the Form', desc: 'Tell us what materials you have and your preferred pickup date.' },
-  { step: '2', title: 'We Confirm', desc: 'We\'ll confirm your pickup within 24 hours and send you a reminder.' },
-  { step: '3', title: 'We Arrive', desc: 'Our team arrives on schedule and handles all collection.' },
-  { step: '4', title: 'You Get a Report', desc: 'Receive a diversion certificate and ESG-ready report.' },
-]
+export default async function SchedulePickupPage() {
+  let wpContent = ''
+  try {
+    const data = await getWordPressData<any>(GET_PAGE, { id: '/schedule-pickup/', idType: 'URI' })
+    wpContent = data?.page?.content || ''
+  } catch {}
+  const heroData = await fetchHeroDataByUri('/schedule-pickup/')
 
-export default function SchedulePickupPage() {
   return (
-    <div className="bg-white">
-      <section className="bg-gradient-to-br from-neutral-50 to-emerald-50 py-20 lg:py-28">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-10 text-center">
-          <p className="text-[#686767] text-sm font-bold uppercase tracking-widest mb-3">Get Started</p>
-          <h1 className="text-[#1F1E1E] text-4xl lg:text-5xl font-black mb-6">
-            Schedule a Pickup
+    <div>
+      {/* Hero */}
+      <section className="pt-[70px] pb-10 text-center">
+        <div className="max-w-[1200px] mx-auto px-6">
+          <h1 className="text-[44px] md:text-4xl sm:text-[28px] font-extrabold mb-3">
+            {heroData.subtitle || 'Schedule a Pickup'}
           </h1>
-          <p className="text-[#686767] text-xl lg:text-2xl max-w-3xl mx-auto leading-relaxed">
-            Ready to recycle? Schedule a free pickup and we&apos;ll take care of the rest — collection, sorting, reporting, and diversion.
+          <p className="text-[17px] text-[#525252] max-w-[480px] mx-auto">
+            {heroData.description || 'Tell us about your materials and preferred schedule \u2014 we\u2019ll handle the rest.'}
           </p>
         </div>
       </section>
 
-      {/* How It Works */}
-      <section className="py-16 bg-white border-b border-gray-100">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
-            {steps.map((s) => (
-              <div key={s.step} className="text-center">
-                <div className="w-14 h-14 bg-[#4BE576] rounded-full flex items-center justify-center mx-auto mb-4 text-[#1E1E1E] font-black text-xl">
-                  {s.step}
-                </div>
-                <h3 className="text-[#1F1E1E] font-bold mb-2">{s.title}</h3>
-                <p className="text-[#686767] text-sm leading-relaxed">{s.desc}</p>
-              </div>
-            ))}
+      {wpContent && (
+        <section className="py-8 bg-white">
+          <div className="max-w-[900px] mx-auto px-6">
+            <WpContent html={wpContent} />
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
-      <section className="py-20 lg:py-28">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-            {/* Info */}
-            <div>
-              <h2 className="text-[#1F1E1E] text-2xl lg:text-3xl font-black mb-8">
-                What We Pick Up
-              </h2>
-              <div className="grid grid-cols-2 gap-3 mb-10">
-                {[
-                  'Electronics', 'Metal Scrap', 'Paper & Cardboard',
-                  'Plastic', 'Pallets', 'Batteries',
-                  'Light Bulbs', 'Cell Phones', 'Textiles',
-                  'Chemicals', 'Organics', 'Hazardous Waste',
-                ].map((m) => (
-                  <div key={m} className="flex items-center gap-2 text-sm text-[#686767]">
-                    <svg className="w-4 h-4 text-[#4BE576] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    {m}
-                  </div>
-                ))}
-              </div>
-
-              <div className="bg-[#4BE576]/10 border border-[#4BE576] rounded-2xl p-6">
-                <h3 className="text-[#1F1E1E] font-bold text-lg mb-2">Or Call Us Directly</h3>
-                <a href="tel:8179465655" className="text-[#499E62] text-2xl font-black block mb-1">
-                  817-946-5655
-                </a>
-                <p className="text-[#686767] text-sm">Mon–Fri 8am–6pm. Same-day quotes available.</p>
-              </div>
-            </div>
-
+      {/* Pickup Grid */}
+      <section className="pt-10 pb-20">
+        <div className="max-w-[1200px] mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-[1.2fr_0.8fr] gap-[60px] items-start">
             {/* Form */}
-            <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-8">
-              <h2 className="text-[#1F1E1E] text-xl font-bold mb-6">Schedule Your Pickup</h2>
+            <div className="p-9 border border-[#ebebeb] rounded-2xl bg-white">
+              <h2 className="text-[22px] font-bold mb-6">Pickup Request Form</h2>
               <ContactForm type="pickup" />
             </div>
+
+            {/* Info */}
+            <div className="flex flex-col gap-5">
+              <div className="flex gap-4 p-6 border border-[#ebebeb] rounded-xl">
+                <span className="material-symbols-outlined text-2xl text-[#2DB446] mt-0.5">schedule</span>
+                <div>
+                  <h4 className="text-[15px] font-bold mb-1">Quick Turnaround</h4>
+                  <p className="text-sm text-[#525252] leading-relaxed">Most pickups can be scheduled within 2\u20133 business days.</p>
+                </div>
+              </div>
+              <div className="flex gap-4 p-6 border border-[#ebebeb] rounded-xl">
+                <span className="material-symbols-outlined text-2xl text-[#2DB446] mt-0.5">phone</span>
+                <div>
+                  <h4 className="text-[15px] font-bold mb-1">Prefer to call?</h4>
+                  <a href="tel:8179465655" className="text-sm font-semibold text-[#1a1a1a]">817-946-5655</a>
+                  <p className="text-xs text-[#737373] mt-1">Mon\u2013Fri, 8am\u20136pm CT</p>
+                </div>
+              </div>
+              <div className="flex gap-4 p-6 border border-[#ebebeb] rounded-xl">
+                <span className="material-symbols-outlined text-2xl text-[#2DB446] mt-0.5">verified</span>
+                <div>
+                  <h4 className="text-[15px] font-bold mb-1">What Happens Next</h4>
+                  <p className="text-sm text-[#525252] leading-relaxed">We&apos;ll review your request and confirm pickup details within 1 business day.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
+      <FinalCTA />
     </div>
   )
 }

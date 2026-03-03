@@ -2,6 +2,8 @@ import React from 'react'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
+import WpContent from '@/components/shared/WpContent'
+import PageHero from '@/components/shared/PageHero'
 import { getWordPressData } from '@/lib/wordpress'
 import { GET_POST, GET_POSTS } from '@/lib/queries'
 import type { Metadata } from 'next'
@@ -46,7 +48,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   return (
     <div className="bg-white">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-neutral-50 to-emerald-50 py-16 lg:py-20">
+      <PageHero className="!py-16 lg:!py-20">
         <div className="max-w-[900px] mx-auto px-6 lg:px-10">
           <nav className="text-sm text-[#686767] mb-6">
             <Link href="/" className="hover:text-[#4BE576]">Home</Link>
@@ -70,7 +72,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             <span>{new Date(post.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</span>
           </div>
         </div>
-      </section>
+      </PageHero>
 
       {/* Featured image */}
       {post.featuredImage && (
@@ -88,10 +90,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       {/* Content */}
       <section className="pb-20">
         <div className="max-w-[900px] mx-auto px-6 lg:px-10">
-          <div
-            className="wp-content"
-            dangerouslySetInnerHTML={{ __html: post.content }}
-          />
+          <WpContent html={post.content} />
           <div className="mt-12 pt-8 border-t border-gray-100">
             <Link href="/resources/blog" className="inline-flex items-center gap-2 text-[#4BE576] font-bold hover:gap-3 transition-all">
               <svg className="w-4 h-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">

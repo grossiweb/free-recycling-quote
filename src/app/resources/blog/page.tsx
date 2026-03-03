@@ -1,8 +1,11 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import WpContent from '@/components/shared/WpContent'
+import PageHero from '@/components/shared/PageHero'
 import { getWordPressData } from '@/lib/wordpress'
-import { GET_POSTS } from '@/lib/queries'
+import { GET_POSTS, GET_PAGE } from '@/lib/queries'
+import { fetchHeroDataByUri } from '@/lib/hero'
 import type { Metadata } from 'next'
 
 export const revalidate = 60
@@ -14,22 +17,42 @@ export const metadata: Metadata = {
 
 export default async function BlogPage() {
   let posts: any[] = []
+  let wpContent = ''
+
   try {
-    const data = await getWordPressData<any>(GET_POSTS, { first: 12 })
-    posts = data?.posts?.nodes || []
+    const [postsData, pageData] = await Promise.all([
+      getWordPressData<any>(GET_POSTS, { first: 12 }),
+      getWordPressData<any>(GET_PAGE, { id: '/resources/blog/', idType: 'URI' }).catch(() => null),
+    ])
+    posts = postsData?.posts?.nodes || []
+    wpContent = pageData?.page?.content || ''
   } catch {}
+  const heroData = await fetchHeroDataByUri('/resources/blog/')
+
+  const bgType = heroData.backgroundType || 'gradient'
+  const isDark = bgType === 'dark' || bgType === 'image'
 
   return (
     <div className="bg-white">
-      <section className="bg-gradient-to-br from-neutral-50 to-emerald-50 py-20 lg:py-24">
+      <PageHero backgroundType={bgType} backgroundImage={heroData.backgroundImage}>
         <div className="max-w-[1400px] mx-auto px-6 lg:px-10 text-center">
-          <p className="text-[#686767] text-sm font-bold uppercase tracking-widest mb-3">Resources</p>
-          <h1 className="text-[#1F1E1E] text-4xl lg:text-5xl font-black mb-4">Blog</h1>
-          <p className="text-[#686767] text-xl max-w-2xl mx-auto">
-            Recycling insights, sustainability tips, and industry news.
+          <p className={`text-sm font-bold uppercase tracking-widest mb-3 ${isDark ? 'text-white/70' : 'text-[#686767]'}`}>
+            {heroData.subtitle || 'Resources'}
+          </p>
+          <h1 className={`text-4xl lg:text-5xl font-black mb-4 ${isDark ? 'text-white' : 'text-[#1F1E1E]'}`}>Blog</h1>
+          <p className={`text-xl max-w-2xl mx-auto ${isDark ? 'text-white/80' : 'text-[#686767]'}`}>
+            {heroData.description || 'Recycling insights, sustainability tips, and industry news.'}
           </p>
         </div>
-      </section>
+      </PageHero>
+
+      {wpContent && (
+        <section className="py-16 bg-white">
+          <div className="max-w-[900px] mx-auto px-6 lg:px-10">
+            <WpContent html={wpContent} />
+          </div>
+        </section>
+      )}
 
       <section className="py-20 lg:py-28">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-10">

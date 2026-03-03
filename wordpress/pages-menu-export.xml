@@ -1,0 +1,1627 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+    Recycling Quote — WordPress Pages & Menu Export
+    Format: WordPress Extended RSS (WXR) 1.2
+
+    HOW TO IMPORT:
+    1. Go to WordPress Admin > Tools > Import
+    2. Install "WordPress Importer" plugin if prompted
+    3. Upload this file
+    4. Assign posts to an existing admin user
+    5. After import: Appearance > Menus > assign "Primary Navigation" to header location
+    6. Settings > Permalinks > set to "Post name" (/%postname%/)
+
+    NOTE: Check for duplicate slugs before importing.
+-->
+<rss version="2.0"
+    xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:wp="http://wordpress.org/export/1.2/">
+<channel>
+    <title>Recycling Quote</title>
+    <link>https://recyclingquote.com</link>
+    <description>Sustainable Business Recycling</description>
+    <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+    <language>en-US</language>
+    <wp:wxr_version>1.2</wp:wxr_version>
+    <wp:base_site_url>https://recyclingquote.com</wp:base_site_url>
+    <wp:base_blog_url>https://recyclingquote.com</wp:base_blog_url>
+
+    <wp:author>
+        <wp:author_id>1</wp:author_id>
+        <wp:author_login><![CDATA[admin]]></wp:author_login>
+        <wp:author_email><![CDATA[admin@recyclingquote.com]]></wp:author_email>
+        <wp:author_display_name><![CDATA[Admin]]></wp:author_display_name>
+        <wp:author_first_name><![CDATA[]]></wp:author_first_name>
+        <wp:author_last_name><![CDATA[]]></wp:author_last_name>
+    </wp:author>
+
+    <!-- Navigation Menu Term -->
+    <wp:term>
+        <wp:term_id>100</wp:term_id>
+        <wp:term_taxonomy>nav_menu</wp:term_taxonomy>
+        <wp:term_slug><![CDATA[primary-navigation]]></wp:term_slug>
+        <wp:term_name><![CDATA[Primary Navigation]]></wp:term_name>
+    </wp:term>
+
+
+    <!-- ============================================================ -->
+    <!-- PAGES — SERVICES                                             -->
+    <!-- ============================================================ -->
+
+    <item>
+        <title>Services</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Comprehensive recycling solutions tailored for businesses of all sizes. From pallet recycling to consumer take-back programs, we handle it all with zero landfill commitment.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+        <excerpt:encoded><![CDATA[Comprehensive recycling solutions for businesses of all sizes.]]></excerpt:encoded>
+        <wp:post_id>10</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>services</wp:post_name>
+        <wp:post_type>page</wp:post_type>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>1</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+    </item>
+
+    <item>
+        <title>Pallet Recycling</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[<!-- wp:heading {"level":2} -->
+<h2>What We Offer</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Our pallet recycling program handles wooden, plastic, and composite pallets of all sizes. We provide scheduled pickups, sorting, and certified recycling — keeping pallets out of landfills and putting materials back into the supply chain.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2>How It Works</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul><li>Request a free quote with your pallet volume and type</li><li>We schedule a convenient pickup at your facility</li><li>Pallets are sorted, repaired, or recycled responsibly</li><li>You receive a detailed sustainability report</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading {"level":2} -->
+<h2>Why Choose Us</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Certified recycling processes, zero landfill commitment, fast turnaround, and transparent reporting for your ESG goals.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+        <excerpt:encoded><![CDATA[Professional pallet recycling services for businesses.]]></excerpt:encoded>
+        <wp:post_id>11</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>pallet-recycling</wp:post_name>
+        <wp:post_type>page</wp:post_type>
+        <wp:post_parent>10</wp:post_parent>
+        <wp:menu_order>1</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+    </item>
+
+    <item>
+        <title>Business Recycling Programs</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[<!-- wp:heading {"level":2} -->
+<h2>What We Offer</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Custom recycling programs designed for your business operations. We assess your waste streams, design a tailored plan, and provide ongoing service to maximize diversion rates.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2>How It Works</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul><li>Free waste audit of your facility</li><li>Custom recycling program design</li><li>Scheduled pickups and container placement</li><li>Monthly reporting and optimization</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading {"level":2} -->
+<h2>Why Choose Us</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Dedicated account management, flexible scheduling, and programs that scale with your business needs.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+        <excerpt:encoded><![CDATA[Custom recycling programs designed for your business.]]></excerpt:encoded>
+        <wp:post_id>12</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>business-recycling-programs</wp:post_name>
+        <wp:post_type>page</wp:post_type>
+        <wp:post_parent>10</wp:post_parent>
+        <wp:menu_order>2</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+    </item>
+
+    <item>
+        <title>Material Recycling Solutions</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[<!-- wp:heading {"level":2} -->
+<h2>What We Offer</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>End-to-end recycling solutions for all material types. Whether you need to recycle electronics, metals, paper, plastics, or hazardous materials, we have certified processes for responsible disposal.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2>How It Works</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul><li>Identify your material types and volumes</li><li>We provide the right containers and logistics</li><li>Materials are processed at certified facilities</li><li>Receive certificates of recycling for compliance</li></ul>
+<!-- /wp:list -->]]></content:encoded>
+        <excerpt:encoded><![CDATA[End-to-end recycling solutions for all material types.]]></excerpt:encoded>
+        <wp:post_id>13</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>material-recycling-solutions</wp:post_name>
+        <wp:post_type>page</wp:post_type>
+        <wp:post_parent>10</wp:post_parent>
+        <wp:menu_order>3</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+    </item>
+
+    <item>
+        <title>Consumer Take Back Programs</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[<!-- wp:heading {"level":2} -->
+<h2>What We Offer</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Help your customers recycle responsibly with branded take-back programs. We design, implement, and manage consumer-facing recycling collection points and mail-back solutions.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2>How It Works</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul><li>We design a branded take-back program for your products</li><li>Collection points or mail-back kits are deployed</li><li>Returned materials are recycled through certified channels</li><li>Impact reports help you communicate sustainability to customers</li></ul>
+<!-- /wp:list -->]]></content:encoded>
+        <excerpt:encoded><![CDATA[Consumer-facing recycling take-back programs.]]></excerpt:encoded>
+        <wp:post_id>14</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>consumer-take-back-programs</wp:post_name>
+        <wp:post_type>page</wp:post_type>
+        <wp:post_parent>10</wp:post_parent>
+        <wp:menu_order>4</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+    </item>
+
+    <item>
+        <title>Collection Events</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[<!-- wp:heading {"level":2} -->
+<h2>What We Offer</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Organize community or corporate recycling collection events with our full-service support. We handle logistics, equipment, staffing, and responsible processing of all collected materials.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2>How It Works</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul><li>Choose a date, location, and target materials</li><li>We provide containers, signage, and on-site staff</li><li>All collected materials are weighed and recycled</li><li>Post-event summary with diversion metrics</li></ul>
+<!-- /wp:list -->]]></content:encoded>
+        <excerpt:encoded><![CDATA[Full-service recycling collection events.]]></excerpt:encoded>
+        <wp:post_id>15</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>collection-events</wp:post_name>
+        <wp:post_type>page</wp:post_type>
+        <wp:post_parent>10</wp:post_parent>
+        <wp:menu_order>5</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+    </item>
+
+
+    <!-- ============================================================ -->
+    <!-- PAGES — INDUSTRIES                                           -->
+    <!-- ============================================================ -->
+
+    <item>
+        <title>Industries</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>We serve businesses across every major industry with customized recycling solutions. No matter your sector, we understand your unique waste streams and compliance requirements.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+        <excerpt:encoded><![CDATA[Recycling solutions for every major industry.]]></excerpt:encoded>
+        <wp:post_id>20</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>industries</wp:post_name>
+        <wp:post_type>page</wp:post_type>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>2</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+    </item>
+
+    <item>
+        <title>Retail</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[<!-- wp:heading {"level":2} -->
+<h2>Recycling for Retail</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Retail businesses generate significant packaging, cardboard, and product waste. Our programs help you manage returns, damaged goods, and packaging materials — reducing costs and meeting sustainability targets.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2>What We Handle</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul><li>Cardboard and packaging materials</li><li>Damaged or returned merchandise</li><li>Electronic displays and fixtures</li><li>Plastic wrap and shrink film</li></ul>
+<!-- /wp:list -->]]></content:encoded>
+        <excerpt:encoded><![CDATA[Recycling solutions for retail businesses.]]></excerpt:encoded>
+        <wp:post_id>21</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>retail</wp:post_name>
+        <wp:post_type>page</wp:post_type>
+        <wp:post_parent>20</wp:post_parent>
+        <wp:menu_order>1</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+    </item>
+
+    <item>
+        <title>Manufacturing</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[<!-- wp:heading {"level":2} -->
+<h2>Recycling for Manufacturing</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Manufacturing facilities produce high volumes of scrap metal, off-spec products, and industrial byproducts. We provide on-site containers, scheduled pickups, and certified processing for all manufacturing waste streams.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2>What We Handle</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul><li>Scrap metal and metal shavings</li><li>Off-spec and defective products</li><li>Industrial packaging and pallets</li><li>Chemical and hazardous byproducts</li></ul>
+<!-- /wp:list -->]]></content:encoded>
+        <excerpt:encoded><![CDATA[Recycling solutions for manufacturing facilities.]]></excerpt:encoded>
+        <wp:post_id>22</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>manufacturing</wp:post_name>
+        <wp:post_type>page</wp:post_type>
+        <wp:post_parent>20</wp:post_parent>
+        <wp:menu_order>2</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+    </item>
+
+    <item>
+        <title>Distribution &amp; Logistics</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[<!-- wp:heading {"level":2} -->
+<h2>Recycling for Distribution &amp; Logistics</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Warehouses and distribution centers deal with large volumes of pallets, packaging, and shipping materials daily. Our programs streamline recycling at the dock, reducing waste hauling costs.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2>What We Handle</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul><li>Wooden and plastic pallets</li><li>Corrugated cardboard and packaging</li><li>Stretch wrap and banding</li><li>Obsolete inventory and equipment</li></ul>
+<!-- /wp:list -->]]></content:encoded>
+        <excerpt:encoded><![CDATA[Recycling solutions for distribution and logistics.]]></excerpt:encoded>
+        <wp:post_id>23</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>distribution-logistics</wp:post_name>
+        <wp:post_type>page</wp:post_type>
+        <wp:post_parent>20</wp:post_parent>
+        <wp:menu_order>3</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+    </item>
+
+    <item>
+        <title>Construction</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[<!-- wp:heading {"level":2} -->
+<h2>Recycling for Construction</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Construction and demolition projects generate large amounts of recyclable materials. We help contractors and builders divert waste from landfills while meeting local regulations.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2>What We Handle</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul><li>Concrete, brick, and masonry</li><li>Lumber and wood waste</li><li>Metal framing and fixtures</li><li>Drywall and roofing materials</li></ul>
+<!-- /wp:list -->]]></content:encoded>
+        <excerpt:encoded><![CDATA[Recycling solutions for construction sites.]]></excerpt:encoded>
+        <wp:post_id>24</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>construction</wp:post_name>
+        <wp:post_type>page</wp:post_type>
+        <wp:post_parent>20</wp:post_parent>
+        <wp:menu_order>4</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+    </item>
+
+    <item>
+        <title>Schools &amp; Government</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[<!-- wp:heading {"level":2} -->
+<h2>Recycling for Schools &amp; Government</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Public institutions have unique compliance and budgetary needs. We offer cost-effective recycling programs designed for schools, municipalities, and government agencies.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2>What We Handle</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul><li>Classroom electronics and IT equipment</li><li>Paper and cardboard</li><li>Furniture and fixtures</li><li>Cafeteria organics and packaging</li></ul>
+<!-- /wp:list -->]]></content:encoded>
+        <excerpt:encoded><![CDATA[Recycling solutions for schools and government.]]></excerpt:encoded>
+        <wp:post_id>25</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>schools-government</wp:post_name>
+        <wp:post_type>page</wp:post_type>
+        <wp:post_parent>20</wp:post_parent>
+        <wp:menu_order>5</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+    </item>
+
+    <item>
+        <title>Other Industries</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[<!-- wp:heading {"level":2} -->
+<h2>Recycling for Every Industry</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>No matter your industry, we can design a recycling program that fits. Healthcare, hospitality, agriculture, automotive — we have experience across all sectors.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+        <excerpt:encoded><![CDATA[Recycling solutions for all other industries.]]></excerpt:encoded>
+        <wp:post_id>26</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>other-industries</wp:post_name>
+        <wp:post_type>page</wp:post_type>
+        <wp:post_parent>20</wp:post_parent>
+        <wp:menu_order>6</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+    </item>
+
+
+    <!-- ============================================================ -->
+    <!-- PAGES — MATERIALS                                            -->
+    <!-- ============================================================ -->
+
+    <item>
+        <title>Materials</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>We recycle a wide range of materials responsibly and sustainably. Select a material below to learn more about our certified recycling processes.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+        <excerpt:encoded><![CDATA[We recycle a wide range of materials responsibly.]]></excerpt:encoded>
+        <wp:post_id>30</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>materials</wp:post_name>
+        <wp:post_type>page</wp:post_type>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>3</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+    </item>
+
+    <item>
+        <title>Electronics</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[<!-- wp:heading {"level":2} -->
+<h2>Electronics Recycling</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Responsible e-waste recycling for computers, monitors, servers, printers, and all electronic equipment. R2/RIOS certified processing ensures data security and environmental compliance.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2>What We Accept</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul><li>Computers, laptops, and tablets</li><li>Monitors and displays</li><li>Servers and networking equipment</li><li>Printers, copiers, and peripherals</li><li>Audio/video equipment</li></ul>
+<!-- /wp:list -->]]></content:encoded>
+        <excerpt:encoded><![CDATA[Certified electronics and e-waste recycling.]]></excerpt:encoded>
+        <wp:post_id>31</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>electronics</wp:post_name>
+        <wp:post_type>page</wp:post_type>
+        <wp:post_parent>30</wp:post_parent>
+        <wp:menu_order>1</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+    </item>
+
+    <item>
+        <title>Metal</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[<!-- wp:heading {"level":2} -->
+<h2>Metal Recycling</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Ferrous and non-ferrous metal recycling for businesses. We handle steel, aluminum, copper, brass, and mixed metals with competitive pricing and convenient pickup.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+        <excerpt:encoded><![CDATA[Ferrous and non-ferrous metal recycling.]]></excerpt:encoded>
+        <wp:post_id>32</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>metal</wp:post_name>
+        <wp:post_type>page</wp:post_type>
+        <wp:post_parent>30</wp:post_parent>
+        <wp:menu_order>2</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+    </item>
+
+    <item>
+        <title>Paper</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[<!-- wp:heading {"level":2} -->
+<h2>Paper Recycling</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Office paper, cardboard, mixed paper, and shredded document recycling. Secure destruction available for confidential materials with certificate of destruction.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+        <excerpt:encoded><![CDATA[Paper and cardboard recycling services.]]></excerpt:encoded>
+        <wp:post_id>33</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>paper</wp:post_name>
+        <wp:post_type>page</wp:post_type>
+        <wp:post_parent>30</wp:post_parent>
+        <wp:menu_order>3</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+    </item>
+
+    <item>
+        <title>Plastic</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[<!-- wp:heading {"level":2} -->
+<h2>Plastic Recycling</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>All resin types accepted. We sort, process, and recycle plastic containers, film, packaging, and industrial plastic waste into reusable raw materials.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+        <excerpt:encoded><![CDATA[Plastic recycling for all resin types.]]></excerpt:encoded>
+        <wp:post_id>34</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>plastic</wp:post_name>
+        <wp:post_type>page</wp:post_type>
+        <wp:post_parent>30</wp:post_parent>
+        <wp:menu_order>4</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+    </item>
+
+    <item>
+        <title>Cell Phones</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[<!-- wp:heading {"level":2} -->
+<h2>Cell Phone Recycling</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Secure cell phone and mobile device recycling with certified data destruction. We handle bulk corporate device retirement and individual collections.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+        <excerpt:encoded><![CDATA[Secure cell phone and mobile device recycling.]]></excerpt:encoded>
+        <wp:post_id>35</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>cell-phones</wp:post_name>
+        <wp:post_type>page</wp:post_type>
+        <wp:post_parent>30</wp:post_parent>
+        <wp:menu_order>5</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+    </item>
+
+    <item>
+        <title>Clothing / Textile</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[<!-- wp:heading {"level":2} -->
+<h2>Clothing &amp; Textile Recycling</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Textile recycling for businesses, including uniforms, linens, fabric scraps, and returned clothing. Materials are sorted for reuse, repurposing, or fiber recovery.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+        <excerpt:encoded><![CDATA[Clothing and textile recycling services.]]></excerpt:encoded>
+        <wp:post_id>36</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>clothing-textile</wp:post_name>
+        <wp:post_type>page</wp:post_type>
+        <wp:post_parent>30</wp:post_parent>
+        <wp:menu_order>6</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+    </item>
+
+    <item>
+        <title>Organics</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[<!-- wp:heading {"level":2} -->
+<h2>Organics Recycling</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Food waste, yard trimmings, and compostable materials diverted from landfill through composting and anaerobic digestion programs.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+        <excerpt:encoded><![CDATA[Organic waste composting and recycling.]]></excerpt:encoded>
+        <wp:post_id>37</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>organics</wp:post_name>
+        <wp:post_type>page</wp:post_type>
+        <wp:post_parent>30</wp:post_parent>
+        <wp:menu_order>7</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+    </item>
+
+    <item>
+        <title>Chemicals</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[<!-- wp:heading {"level":2} -->
+<h2>Chemical Recycling</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Safe recycling and disposal of solvents, cleaning agents, and non-hazardous chemical waste. Fully permitted and compliant with EPA regulations.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+        <excerpt:encoded><![CDATA[Chemical waste recycling and safe disposal.]]></excerpt:encoded>
+        <wp:post_id>38</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>chemicals</wp:post_name>
+        <wp:post_type>page</wp:post_type>
+        <wp:post_parent>30</wp:post_parent>
+        <wp:menu_order>8</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+    </item>
+
+    <item>
+        <title>Vehicle</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[<!-- wp:heading {"level":2} -->
+<h2>Vehicle Recycling</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>End-of-life vehicle recycling including fleet vehicles, forklifts, and heavy equipment. We handle fluid removal, parts salvage, and metal recycling.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+        <excerpt:encoded><![CDATA[End-of-life vehicle recycling services.]]></excerpt:encoded>
+        <wp:post_id>39</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>vehicle</wp:post_name>
+        <wp:post_type>page</wp:post_type>
+        <wp:post_parent>30</wp:post_parent>
+        <wp:menu_order>9</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+    </item>
+
+    <item>
+        <title>Junk</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[<!-- wp:heading {"level":2} -->
+<h2>Junk Removal &amp; Recycling</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Full-service junk removal with maximum recycling. We sort, separate, and divert as much material as possible from landfill — furniture, appliances, mixed waste, and more.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+        <excerpt:encoded><![CDATA[Junk removal with maximum recycling.]]></excerpt:encoded>
+        <wp:post_id>40</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>junk</wp:post_name>
+        <wp:post_type>page</wp:post_type>
+        <wp:post_parent>30</wp:post_parent>
+        <wp:menu_order>10</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+    </item>
+
+    <item>
+        <title>Pallets</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[<!-- wp:heading {"level":2} -->
+<h2>Pallet Recycling</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Wooden, plastic, and composite pallet recycling. We repair reusable pallets and recycle the rest into mulch, particleboard, or raw material.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+        <excerpt:encoded><![CDATA[Pallet recycling and repair services.]]></excerpt:encoded>
+        <wp:post_id>41</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>pallets</wp:post_name>
+        <wp:post_type>page</wp:post_type>
+        <wp:post_parent>30</wp:post_parent>
+        <wp:menu_order>11</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+    </item>
+
+    <item>
+        <title>Light Bulbs</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[<!-- wp:heading {"level":2} -->
+<h2>Light Bulb Recycling</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Safe recycling of fluorescent tubes, CFLs, HID lamps, and LED bulbs. Mercury-containing lamps handled per EPA Universal Waste regulations.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+        <excerpt:encoded><![CDATA[Light bulb and lamp recycling services.]]></excerpt:encoded>
+        <wp:post_id>42</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>light-bulbs</wp:post_name>
+        <wp:post_type>page</wp:post_type>
+        <wp:post_parent>30</wp:post_parent>
+        <wp:menu_order>12</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+    </item>
+
+    <item>
+        <title>Batteries</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[<!-- wp:heading {"level":2} -->
+<h2>Battery Recycling</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>All battery types accepted — alkaline, lithium-ion, lead-acid, NiCd, and NiMH. Safe collection, transport, and processing per DOT and EPA guidelines.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+        <excerpt:encoded><![CDATA[Battery recycling for all types.]]></excerpt:encoded>
+        <wp:post_id>43</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>batteries</wp:post_name>
+        <wp:post_type>page</wp:post_type>
+        <wp:post_parent>30</wp:post_parent>
+        <wp:menu_order>13</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+    </item>
+
+    <item>
+        <title>Dumpster Rental</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[<!-- wp:heading {"level":2} -->
+<h2>Dumpster Rental</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Roll-off dumpster rentals for construction, renovation, and large cleanout projects. Multiple sizes available with flexible rental periods and recycling-focused hauling.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+        <excerpt:encoded><![CDATA[Roll-off dumpster rental for projects.]]></excerpt:encoded>
+        <wp:post_id>44</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>dumpster-rental</wp:post_name>
+        <wp:post_type>page</wp:post_type>
+        <wp:post_parent>30</wp:post_parent>
+        <wp:menu_order>14</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+    </item>
+
+    <item>
+        <title>Hazardous Materials</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[<!-- wp:heading {"level":2} -->
+<h2>Hazardous Materials Recycling</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Licensed hazardous waste recycling and disposal. We handle paints, solvents, pesticides, and other regulated materials with full manifesting and documentation.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+        <excerpt:encoded><![CDATA[Hazardous waste recycling and disposal.]]></excerpt:encoded>
+        <wp:post_id>45</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>hazardous-materials</wp:post_name>
+        <wp:post_type>page</wp:post_type>
+        <wp:post_parent>30</wp:post_parent>
+        <wp:menu_order>15</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+    </item>
+
+
+    <!-- ============================================================ -->
+    <!-- PAGES — RESOURCES                                            -->
+    <!-- ============================================================ -->
+
+    <item>
+        <title>Resources</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Stay informed with our recycling guides, industry news, frequently asked questions, and educational videos.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+        <excerpt:encoded><![CDATA[Recycling guides, news, FAQ, and videos.]]></excerpt:encoded>
+        <wp:post_id>50</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>resources</wp:post_name>
+        <wp:post_type>page</wp:post_type>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>4</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+    </item>
+
+    <item>
+        <title>Blog</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>The latest recycling industry news, sustainability tips, and company updates.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+        <excerpt:encoded><![CDATA[Recycling news and sustainability tips.]]></excerpt:encoded>
+        <wp:post_id>51</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>blog</wp:post_name>
+        <wp:post_type>page</wp:post_type>
+        <wp:post_parent>50</wp:post_parent>
+        <wp:menu_order>1</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+    </item>
+
+    <item>
+        <title>FAQ</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Answers to the most common questions about our recycling services, pricing, and processes.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+        <excerpt:encoded><![CDATA[Frequently asked questions about recycling.]]></excerpt:encoded>
+        <wp:post_id>52</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>faq</wp:post_name>
+        <wp:post_type>page</wp:post_type>
+        <wp:post_parent>50</wp:post_parent>
+        <wp:menu_order>2</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+    </item>
+
+    <item>
+        <title>Videos</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Watch educational videos about recycling processes, facility tours, and sustainability best practices.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+        <excerpt:encoded><![CDATA[Educational recycling videos.]]></excerpt:encoded>
+        <wp:post_id>53</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>videos</wp:post_name>
+        <wp:post_type>page</wp:post_type>
+        <wp:post_parent>50</wp:post_parent>
+        <wp:menu_order>3</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+    </item>
+
+
+    <!-- ============================================================ -->
+    <!-- PAGES — ABOUT                                                -->
+    <!-- ============================================================ -->
+
+    <item>
+        <title>About</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>We're on a mission to make responsible recycling accessible and simple for every business — with zero landfill commitment and full transparency.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+        <excerpt:encoded><![CDATA[About Recycling Quote.]]></excerpt:encoded>
+        <wp:post_id>60</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>about</wp:post_name>
+        <wp:post_type>page</wp:post_type>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>5</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+    </item>
+
+    <item>
+        <title>Our Story</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[<!-- wp:heading {"level":2} -->
+<h2>How We Got Started</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Founded with a simple belief: every business deserves access to easy, affordable, and responsible recycling. Learn about our journey from a local recycling service to a nationwide sustainability partner.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+        <excerpt:encoded><![CDATA[The story behind Recycling Quote.]]></excerpt:encoded>
+        <wp:post_id>61</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>our-story</wp:post_name>
+        <wp:post_type>page</wp:post_type>
+        <wp:post_parent>60</wp:post_parent>
+        <wp:menu_order>1</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+    </item>
+
+    <item>
+        <title>Why Choose Us</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[<!-- wp:heading {"level":2} -->
+<h2>What Sets Us Apart</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Certified processes, zero landfill commitment, dedicated account managers, and transparent reporting make us the trusted choice for business recycling.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>R2/RIOS certified recycling facilities</li><li>Zero landfill commitment on all materials</li><li>Dedicated account manager for every client</li><li>Real-time tracking and sustainability reporting</li><li>Flexible scheduling and competitive pricing</li></ul>
+<!-- /wp:list -->]]></content:encoded>
+        <excerpt:encoded><![CDATA[Why businesses choose Recycling Quote.]]></excerpt:encoded>
+        <wp:post_id>62</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>why-choose-us</wp:post_name>
+        <wp:post_type>page</wp:post_type>
+        <wp:post_parent>60</wp:post_parent>
+        <wp:menu_order>2</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+    </item>
+
+    <item>
+        <title>ESG &amp; Sustainability</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[<!-- wp:heading {"level":2} -->
+<h2>Our Approach to ESG</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>We help businesses meet their Environmental, Social, and Governance reporting requirements with detailed recycling data, certificates of recycling, and impact metrics.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2>Reporting You Can Trust</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Every pickup is documented with weight, material type, and processing destination. Use our reports directly in your ESG disclosures and sustainability communications.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+        <excerpt:encoded><![CDATA[ESG reporting and sustainability services.]]></excerpt:encoded>
+        <wp:post_id>63</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>esg-sustainability</wp:post_name>
+        <wp:post_type>page</wp:post_type>
+        <wp:post_parent>60</wp:post_parent>
+        <wp:menu_order>3</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+    </item>
+
+    <item>
+        <title>Our Impact</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[<!-- wp:heading {"level":2} -->
+<h2>The Difference We Make</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Measurable environmental impact: tons diverted from landfill, gallons of water saved, CO2 emissions reduced, and communities served through responsible recycling.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+        <excerpt:encoded><![CDATA[Our measurable recycling impact.]]></excerpt:encoded>
+        <wp:post_id>64</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>our-impact</wp:post_name>
+        <wp:post_type>page</wp:post_type>
+        <wp:post_parent>60</wp:post_parent>
+        <wp:menu_order>4</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+    </item>
+
+
+    <!-- ============================================================ -->
+    <!-- PAGES — CONTACT & SCHEDULE PICKUP                            -->
+    <!-- ============================================================ -->
+
+    <item>
+        <title>Contact</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Ready to start recycling smarter? Get in touch for a free, no-obligation quote. We respond within 24 hours.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+        <excerpt:encoded><![CDATA[Contact us for a free recycling quote.]]></excerpt:encoded>
+        <wp:post_id>70</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>contact</wp:post_name>
+        <wp:post_type>page</wp:post_type>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>6</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+    </item>
+
+    <item>
+        <title>Schedule Pickup</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Schedule a recycling pickup at your facility. Choose a convenient date and time — we handle the rest. Available for all material types with flexible scheduling.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+        <excerpt:encoded><![CDATA[Schedule a recycling pickup.]]></excerpt:encoded>
+        <wp:post_id>80</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>schedule-pickup</wp:post_name>
+        <wp:post_type>page</wp:post_type>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>7</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+    </item>
+
+
+    <!-- ============================================================ -->
+    <!-- NAVIGATION MENU — PRIMARY                                    -->
+    <!-- ============================================================ -->
+
+    <!-- ── Top-level: Home ── -->
+    <item>
+        <title>Home</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[]]></content:encoded>
+        <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+        <wp:post_id>201</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>201</wp:post_name>
+        <wp:post_type>nav_menu_item</wp:post_type>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>1</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+        <category domain="nav_menu" nicename="primary-navigation"><![CDATA[Primary Navigation]]></category>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[custom]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[custom]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[201]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[/]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <!-- ── Top-level: Services ── -->
+    <item>
+        <title>Services</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[]]></content:encoded>
+        <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+        <wp:post_id>202</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>202</wp:post_name>
+        <wp:post_type>nav_menu_item</wp:post_type>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>2</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+        <category domain="nav_menu" nicename="primary-navigation"><![CDATA[Primary Navigation]]></category>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[10]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <!-- Services submenu items -->
+    <item>
+        <title>Pallet Recycling</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[]]></content:encoded>
+        <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+        <wp:post_id>211</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>211</wp:post_name>
+        <wp:post_type>nav_menu_item</wp:post_type>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>3</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+        <category domain="nav_menu" nicename="primary-navigation"><![CDATA[Primary Navigation]]></category>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[11]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[202]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+        <title>Business Recycling Programs</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[]]></content:encoded>
+        <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+        <wp:post_id>212</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>212</wp:post_name>
+        <wp:post_type>nav_menu_item</wp:post_type>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>4</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+        <category domain="nav_menu" nicename="primary-navigation"><![CDATA[Primary Navigation]]></category>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[12]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[202]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+        <title>Material Recycling Solutions</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[]]></content:encoded>
+        <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+        <wp:post_id>213</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>213</wp:post_name>
+        <wp:post_type>nav_menu_item</wp:post_type>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>5</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+        <category domain="nav_menu" nicename="primary-navigation"><![CDATA[Primary Navigation]]></category>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[13]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[202]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+        <title>Consumer Take Back Programs</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[]]></content:encoded>
+        <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+        <wp:post_id>214</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>214</wp:post_name>
+        <wp:post_type>nav_menu_item</wp:post_type>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>6</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+        <category domain="nav_menu" nicename="primary-navigation"><![CDATA[Primary Navigation]]></category>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[14]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[202]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+        <title>Collection Events</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[]]></content:encoded>
+        <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+        <wp:post_id>215</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>215</wp:post_name>
+        <wp:post_type>nav_menu_item</wp:post_type>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>7</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+        <category domain="nav_menu" nicename="primary-navigation"><![CDATA[Primary Navigation]]></category>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[15]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[202]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <!-- ── Top-level: Industries ── -->
+    <item>
+        <title>Industries</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[]]></content:encoded>
+        <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+        <wp:post_id>203</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>203</wp:post_name>
+        <wp:post_type>nav_menu_item</wp:post_type>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>8</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+        <category domain="nav_menu" nicename="primary-navigation"><![CDATA[Primary Navigation]]></category>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[20]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <!-- Industries submenu items -->
+    <item>
+        <title>Retail</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[]]></content:encoded>
+        <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+        <wp:post_id>221</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>221</wp:post_name>
+        <wp:post_type>nav_menu_item</wp:post_type>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>9</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+        <category domain="nav_menu" nicename="primary-navigation"><![CDATA[Primary Navigation]]></category>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[21]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[203]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+        <title>Manufacturing</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[]]></content:encoded>
+        <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+        <wp:post_id>222</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>222</wp:post_name>
+        <wp:post_type>nav_menu_item</wp:post_type>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>10</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+        <category domain="nav_menu" nicename="primary-navigation"><![CDATA[Primary Navigation]]></category>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[22]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[203]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+        <title>Distribution &amp; Logistics</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[]]></content:encoded>
+        <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+        <wp:post_id>223</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>223</wp:post_name>
+        <wp:post_type>nav_menu_item</wp:post_type>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>11</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+        <category domain="nav_menu" nicename="primary-navigation"><![CDATA[Primary Navigation]]></category>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[23]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[203]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+        <title>Construction</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[]]></content:encoded>
+        <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+        <wp:post_id>224</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>224</wp:post_name>
+        <wp:post_type>nav_menu_item</wp:post_type>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>12</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+        <category domain="nav_menu" nicename="primary-navigation"><![CDATA[Primary Navigation]]></category>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[24]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[203]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+        <title>Schools &amp; Government</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[]]></content:encoded>
+        <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+        <wp:post_id>225</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>225</wp:post_name>
+        <wp:post_type>nav_menu_item</wp:post_type>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>13</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+        <category domain="nav_menu" nicename="primary-navigation"><![CDATA[Primary Navigation]]></category>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[25]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[203]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item>
+        <title>Other Industries</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[]]></content:encoded>
+        <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+        <wp:post_id>226</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>226</wp:post_name>
+        <wp:post_type>nav_menu_item</wp:post_type>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>14</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+        <category domain="nav_menu" nicename="primary-navigation"><![CDATA[Primary Navigation]]></category>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[26]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[203]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <!-- ── Top-level: Materials ── -->
+    <item>
+        <title>Materials</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[]]></content:encoded>
+        <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+        <wp:post_id>204</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>204</wp:post_name>
+        <wp:post_type>nav_menu_item</wp:post_type>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>15</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+        <category domain="nav_menu" nicename="primary-navigation"><![CDATA[Primary Navigation]]></category>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[30]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <!-- Materials submenu items -->
+    <item>
+        <title>Electronics</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[]]></content:encoded>
+        <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+        <wp:post_id>231</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>231</wp:post_name>
+        <wp:post_type>nav_menu_item</wp:post_type>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>16</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+        <category domain="nav_menu" nicename="primary-navigation"><![CDATA[Primary Navigation]]></category>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[31]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[204]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item><title>Metal</title><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><dc:creator><![CDATA[admin]]></dc:creator><content:encoded><![CDATA[]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded><wp:post_id>232</wp:post_id><wp:post_date>2025-01-01 00:00:00</wp:post_date><wp:post_status>publish</wp:post_status><wp:post_name>232</wp:post_name><wp:post_type>nav_menu_item</wp:post_type><wp:post_parent>0</wp:post_parent><wp:menu_order>17</wp:menu_order><wp:comment_status>closed</wp:comment_status><wp:ping_status>closed</wp:ping_status><category domain="nav_menu" nicename="primary-navigation"><![CDATA[Primary Navigation]]></category><wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[32]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[204]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta></item>
+
+    <item><title>Paper</title><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><dc:creator><![CDATA[admin]]></dc:creator><content:encoded><![CDATA[]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded><wp:post_id>233</wp:post_id><wp:post_date>2025-01-01 00:00:00</wp:post_date><wp:post_status>publish</wp:post_status><wp:post_name>233</wp:post_name><wp:post_type>nav_menu_item</wp:post_type><wp:post_parent>0</wp:post_parent><wp:menu_order>18</wp:menu_order><wp:comment_status>closed</wp:comment_status><wp:ping_status>closed</wp:ping_status><category domain="nav_menu" nicename="primary-navigation"><![CDATA[Primary Navigation]]></category><wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[33]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[204]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta></item>
+
+    <item><title>Plastic</title><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><dc:creator><![CDATA[admin]]></dc:creator><content:encoded><![CDATA[]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded><wp:post_id>234</wp:post_id><wp:post_date>2025-01-01 00:00:00</wp:post_date><wp:post_status>publish</wp:post_status><wp:post_name>234</wp:post_name><wp:post_type>nav_menu_item</wp:post_type><wp:post_parent>0</wp:post_parent><wp:menu_order>19</wp:menu_order><wp:comment_status>closed</wp:comment_status><wp:ping_status>closed</wp:ping_status><category domain="nav_menu" nicename="primary-navigation"><![CDATA[Primary Navigation]]></category><wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[34]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[204]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta></item>
+
+    <item><title>Cell Phones</title><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><dc:creator><![CDATA[admin]]></dc:creator><content:encoded><![CDATA[]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded><wp:post_id>235</wp:post_id><wp:post_date>2025-01-01 00:00:00</wp:post_date><wp:post_status>publish</wp:post_status><wp:post_name>235</wp:post_name><wp:post_type>nav_menu_item</wp:post_type><wp:post_parent>0</wp:post_parent><wp:menu_order>20</wp:menu_order><wp:comment_status>closed</wp:comment_status><wp:ping_status>closed</wp:ping_status><category domain="nav_menu" nicename="primary-navigation"><![CDATA[Primary Navigation]]></category><wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[35]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[204]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta></item>
+
+    <item><title>Clothing / Textile</title><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><dc:creator><![CDATA[admin]]></dc:creator><content:encoded><![CDATA[]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded><wp:post_id>236</wp:post_id><wp:post_date>2025-01-01 00:00:00</wp:post_date><wp:post_status>publish</wp:post_status><wp:post_name>236</wp:post_name><wp:post_type>nav_menu_item</wp:post_type><wp:post_parent>0</wp:post_parent><wp:menu_order>21</wp:menu_order><wp:comment_status>closed</wp:comment_status><wp:ping_status>closed</wp:ping_status><category domain="nav_menu" nicename="primary-navigation"><![CDATA[Primary Navigation]]></category><wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[36]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[204]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta></item>
+
+    <item><title>Organics</title><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><dc:creator><![CDATA[admin]]></dc:creator><content:encoded><![CDATA[]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded><wp:post_id>237</wp:post_id><wp:post_date>2025-01-01 00:00:00</wp:post_date><wp:post_status>publish</wp:post_status><wp:post_name>237</wp:post_name><wp:post_type>nav_menu_item</wp:post_type><wp:post_parent>0</wp:post_parent><wp:menu_order>22</wp:menu_order><wp:comment_status>closed</wp:comment_status><wp:ping_status>closed</wp:ping_status><category domain="nav_menu" nicename="primary-navigation"><![CDATA[Primary Navigation]]></category><wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[37]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[204]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta></item>
+
+    <item><title>Chemicals</title><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><dc:creator><![CDATA[admin]]></dc:creator><content:encoded><![CDATA[]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded><wp:post_id>238</wp:post_id><wp:post_date>2025-01-01 00:00:00</wp:post_date><wp:post_status>publish</wp:post_status><wp:post_name>238</wp:post_name><wp:post_type>nav_menu_item</wp:post_type><wp:post_parent>0</wp:post_parent><wp:menu_order>23</wp:menu_order><wp:comment_status>closed</wp:comment_status><wp:ping_status>closed</wp:ping_status><category domain="nav_menu" nicename="primary-navigation"><![CDATA[Primary Navigation]]></category><wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[38]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[204]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta></item>
+
+    <item><title>Vehicle</title><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><dc:creator><![CDATA[admin]]></dc:creator><content:encoded><![CDATA[]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded><wp:post_id>239</wp:post_id><wp:post_date>2025-01-01 00:00:00</wp:post_date><wp:post_status>publish</wp:post_status><wp:post_name>239</wp:post_name><wp:post_type>nav_menu_item</wp:post_type><wp:post_parent>0</wp:post_parent><wp:menu_order>24</wp:menu_order><wp:comment_status>closed</wp:comment_status><wp:ping_status>closed</wp:ping_status><category domain="nav_menu" nicename="primary-navigation"><![CDATA[Primary Navigation]]></category><wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[39]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[204]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta></item>
+
+    <item><title>Junk</title><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><dc:creator><![CDATA[admin]]></dc:creator><content:encoded><![CDATA[]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded><wp:post_id>240</wp:post_id><wp:post_date>2025-01-01 00:00:00</wp:post_date><wp:post_status>publish</wp:post_status><wp:post_name>240</wp:post_name><wp:post_type>nav_menu_item</wp:post_type><wp:post_parent>0</wp:post_parent><wp:menu_order>25</wp:menu_order><wp:comment_status>closed</wp:comment_status><wp:ping_status>closed</wp:ping_status><category domain="nav_menu" nicename="primary-navigation"><![CDATA[Primary Navigation]]></category><wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[40]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[204]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta></item>
+
+    <item><title>Pallets</title><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><dc:creator><![CDATA[admin]]></dc:creator><content:encoded><![CDATA[]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded><wp:post_id>241</wp:post_id><wp:post_date>2025-01-01 00:00:00</wp:post_date><wp:post_status>publish</wp:post_status><wp:post_name>241</wp:post_name><wp:post_type>nav_menu_item</wp:post_type><wp:post_parent>0</wp:post_parent><wp:menu_order>26</wp:menu_order><wp:comment_status>closed</wp:comment_status><wp:ping_status>closed</wp:ping_status><category domain="nav_menu" nicename="primary-navigation"><![CDATA[Primary Navigation]]></category><wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[41]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[204]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta></item>
+
+    <item><title>Light Bulbs</title><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><dc:creator><![CDATA[admin]]></dc:creator><content:encoded><![CDATA[]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded><wp:post_id>242</wp:post_id><wp:post_date>2025-01-01 00:00:00</wp:post_date><wp:post_status>publish</wp:post_status><wp:post_name>242</wp:post_name><wp:post_type>nav_menu_item</wp:post_type><wp:post_parent>0</wp:post_parent><wp:menu_order>27</wp:menu_order><wp:comment_status>closed</wp:comment_status><wp:ping_status>closed</wp:ping_status><category domain="nav_menu" nicename="primary-navigation"><![CDATA[Primary Navigation]]></category><wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[42]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[204]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta></item>
+
+    <item><title>Batteries</title><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><dc:creator><![CDATA[admin]]></dc:creator><content:encoded><![CDATA[]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded><wp:post_id>243</wp:post_id><wp:post_date>2025-01-01 00:00:00</wp:post_date><wp:post_status>publish</wp:post_status><wp:post_name>243</wp:post_name><wp:post_type>nav_menu_item</wp:post_type><wp:post_parent>0</wp:post_parent><wp:menu_order>28</wp:menu_order><wp:comment_status>closed</wp:comment_status><wp:ping_status>closed</wp:ping_status><category domain="nav_menu" nicename="primary-navigation"><![CDATA[Primary Navigation]]></category><wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[43]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[204]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta></item>
+
+    <item><title>Dumpster Rental</title><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><dc:creator><![CDATA[admin]]></dc:creator><content:encoded><![CDATA[]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded><wp:post_id>244</wp:post_id><wp:post_date>2025-01-01 00:00:00</wp:post_date><wp:post_status>publish</wp:post_status><wp:post_name>244</wp:post_name><wp:post_type>nav_menu_item</wp:post_type><wp:post_parent>0</wp:post_parent><wp:menu_order>29</wp:menu_order><wp:comment_status>closed</wp:comment_status><wp:ping_status>closed</wp:ping_status><category domain="nav_menu" nicename="primary-navigation"><![CDATA[Primary Navigation]]></category><wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[44]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[204]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta></item>
+
+    <item><title>Hazardous Materials</title><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><dc:creator><![CDATA[admin]]></dc:creator><content:encoded><![CDATA[]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded><wp:post_id>245</wp:post_id><wp:post_date>2025-01-01 00:00:00</wp:post_date><wp:post_status>publish</wp:post_status><wp:post_name>245</wp:post_name><wp:post_type>nav_menu_item</wp:post_type><wp:post_parent>0</wp:post_parent><wp:menu_order>30</wp:menu_order><wp:comment_status>closed</wp:comment_status><wp:ping_status>closed</wp:ping_status><category domain="nav_menu" nicename="primary-navigation"><![CDATA[Primary Navigation]]></category><wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[45]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[204]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta></item>
+
+    <!-- ── Top-level: Resources ── -->
+    <item>
+        <title>Resources</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[]]></content:encoded>
+        <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+        <wp:post_id>205</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>205</wp:post_name>
+        <wp:post_type>nav_menu_item</wp:post_type>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>31</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+        <category domain="nav_menu" nicename="primary-navigation"><![CDATA[Primary Navigation]]></category>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[50]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item><title>Blog</title><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><dc:creator><![CDATA[admin]]></dc:creator><content:encoded><![CDATA[]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded><wp:post_id>251</wp:post_id><wp:post_date>2025-01-01 00:00:00</wp:post_date><wp:post_status>publish</wp:post_status><wp:post_name>251</wp:post_name><wp:post_type>nav_menu_item</wp:post_type><wp:post_parent>0</wp:post_parent><wp:menu_order>32</wp:menu_order><wp:comment_status>closed</wp:comment_status><wp:ping_status>closed</wp:ping_status><category domain="nav_menu" nicename="primary-navigation"><![CDATA[Primary Navigation]]></category><wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[51]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[205]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta></item>
+
+    <item><title>FAQ</title><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><dc:creator><![CDATA[admin]]></dc:creator><content:encoded><![CDATA[]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded><wp:post_id>252</wp:post_id><wp:post_date>2025-01-01 00:00:00</wp:post_date><wp:post_status>publish</wp:post_status><wp:post_name>252</wp:post_name><wp:post_type>nav_menu_item</wp:post_type><wp:post_parent>0</wp:post_parent><wp:menu_order>33</wp:menu_order><wp:comment_status>closed</wp:comment_status><wp:ping_status>closed</wp:ping_status><category domain="nav_menu" nicename="primary-navigation"><![CDATA[Primary Navigation]]></category><wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[52]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[205]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta></item>
+
+    <item><title>Videos</title><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><dc:creator><![CDATA[admin]]></dc:creator><content:encoded><![CDATA[]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded><wp:post_id>253</wp:post_id><wp:post_date>2025-01-01 00:00:00</wp:post_date><wp:post_status>publish</wp:post_status><wp:post_name>253</wp:post_name><wp:post_type>nav_menu_item</wp:post_type><wp:post_parent>0</wp:post_parent><wp:menu_order>34</wp:menu_order><wp:comment_status>closed</wp:comment_status><wp:ping_status>closed</wp:ping_status><category domain="nav_menu" nicename="primary-navigation"><![CDATA[Primary Navigation]]></category><wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[53]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[205]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta></item>
+
+    <!-- ── Top-level: About ── -->
+    <item>
+        <title>About</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[]]></content:encoded>
+        <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+        <wp:post_id>206</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>206</wp:post_name>
+        <wp:post_type>nav_menu_item</wp:post_type>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>35</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+        <category domain="nav_menu" nicename="primary-navigation"><![CDATA[Primary Navigation]]></category>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[60]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+    </item>
+
+    <item><title>Our Story</title><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><dc:creator><![CDATA[admin]]></dc:creator><content:encoded><![CDATA[]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded><wp:post_id>261</wp:post_id><wp:post_date>2025-01-01 00:00:00</wp:post_date><wp:post_status>publish</wp:post_status><wp:post_name>261</wp:post_name><wp:post_type>nav_menu_item</wp:post_type><wp:post_parent>0</wp:post_parent><wp:menu_order>36</wp:menu_order><wp:comment_status>closed</wp:comment_status><wp:ping_status>closed</wp:ping_status><category domain="nav_menu" nicename="primary-navigation"><![CDATA[Primary Navigation]]></category><wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[61]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[206]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta></item>
+
+    <item><title>Why Choose Us</title><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><dc:creator><![CDATA[admin]]></dc:creator><content:encoded><![CDATA[]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded><wp:post_id>262</wp:post_id><wp:post_date>2025-01-01 00:00:00</wp:post_date><wp:post_status>publish</wp:post_status><wp:post_name>262</wp:post_name><wp:post_type>nav_menu_item</wp:post_type><wp:post_parent>0</wp:post_parent><wp:menu_order>37</wp:menu_order><wp:comment_status>closed</wp:comment_status><wp:ping_status>closed</wp:ping_status><category domain="nav_menu" nicename="primary-navigation"><![CDATA[Primary Navigation]]></category><wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[62]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[206]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta></item>
+
+    <item><title>ESG &amp; Sustainability</title><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><dc:creator><![CDATA[admin]]></dc:creator><content:encoded><![CDATA[]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded><wp:post_id>263</wp:post_id><wp:post_date>2025-01-01 00:00:00</wp:post_date><wp:post_status>publish</wp:post_status><wp:post_name>263</wp:post_name><wp:post_type>nav_menu_item</wp:post_type><wp:post_parent>0</wp:post_parent><wp:menu_order>38</wp:menu_order><wp:comment_status>closed</wp:comment_status><wp:ping_status>closed</wp:ping_status><category domain="nav_menu" nicename="primary-navigation"><![CDATA[Primary Navigation]]></category><wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[63]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[206]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta></item>
+
+    <item><title>Our Impact</title><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><dc:creator><![CDATA[admin]]></dc:creator><content:encoded><![CDATA[]]></content:encoded><excerpt:encoded><![CDATA[]]></excerpt:encoded><wp:post_id>264</wp:post_id><wp:post_date>2025-01-01 00:00:00</wp:post_date><wp:post_status>publish</wp:post_status><wp:post_name>264</wp:post_name><wp:post_type>nav_menu_item</wp:post_type><wp:post_parent>0</wp:post_parent><wp:menu_order>39</wp:menu_order><wp:comment_status>closed</wp:comment_status><wp:ping_status>closed</wp:ping_status><category domain="nav_menu" nicename="primary-navigation"><![CDATA[Primary Navigation]]></category><wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[64]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[206]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta><wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta></item>
+
+    <!-- ── Top-level: Contact ── -->
+    <item>
+        <title>Contact</title>
+        <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <content:encoded><![CDATA[]]></content:encoded>
+        <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+        <wp:post_id>207</wp:post_id>
+        <wp:post_date>2025-01-01 00:00:00</wp:post_date>
+        <wp:post_status>publish</wp:post_status>
+        <wp:post_name>207</wp:post_name>
+        <wp:post_type>nav_menu_item</wp:post_type>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>40</wp:menu_order>
+        <wp:comment_status>closed</wp:comment_status>
+        <wp:ping_status>closed</wp:ping_status>
+        <category domain="nav_menu" nicename="primary-navigation"><![CDATA[Primary Navigation]]></category>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key><wp:meta_value><![CDATA[post_type]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key><wp:meta_value><![CDATA[page]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key><wp:meta_value><![CDATA[70]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key><wp:meta_value><![CDATA[0]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key><wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value></wp:postmeta>
+        <wp:postmeta><wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key><wp:meta_value><![CDATA[]]></wp:meta_value></wp:postmeta>
+    </item>
+
+</channel>
+</rss>

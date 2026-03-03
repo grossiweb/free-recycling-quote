@@ -1,0 +1,131 @@
+[
+  {
+    "key": "group_hero_section",
+    "title": "Hero Section",
+    "fields": [
+      {
+        "key": "field_hero_subtitle",
+        "label": "Hero Subtitle",
+        "name": "hero_subtitle",
+        "aria-label": "",
+        "type": "text",
+        "instructions": "Small uppercase text above the page heading (e.g., \"Resources\", \"Services\", \"Get In Touch\"). Leave empty to use the default.",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "50",
+          "class": "",
+          "id": ""
+        },
+        "show_in_graphql": 1,
+        "default_value": "",
+        "maxlength": "",
+        "placeholder": "e.g. Resources, Services, Get In Touch"
+      },
+      {
+        "key": "field_hero_description",
+        "label": "Hero Description",
+        "name": "hero_description",
+        "aria-label": "",
+        "type": "textarea",
+        "instructions": "Paragraph below the page heading. Leave empty to use the default description.",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "100",
+          "class": "",
+          "id": ""
+        },
+        "show_in_graphql": 1,
+        "default_value": "",
+        "new_lines": "",
+        "maxlength": "",
+        "placeholder": "Override the default hero description...",
+        "rows": 3
+      },
+      {
+        "key": "field_hero_background_type",
+        "label": "Hero Background Type",
+        "name": "hero_background_type",
+        "aria-label": "",
+        "type": "select",
+        "instructions": "Controls the hero section background style on the frontend.",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "50",
+          "class": "",
+          "id": ""
+        },
+        "show_in_graphql": 1,
+        "choices": {
+          "gradient": "Default Gradient (light green)",
+          "image": "Background Image (with dark overlay)",
+          "dark": "Dark Background (solid dark)"
+        },
+        "default_value": "gradient",
+        "return_format": "value",
+        "multiple": 0,
+        "allow_null": 0,
+        "ui": 1,
+        "ajax": 0,
+        "placeholder": ""
+      },
+      {
+        "key": "field_hero_background_image",
+        "label": "Hero Background Image",
+        "name": "hero_background_image",
+        "aria-label": "",
+        "type": "image",
+        "instructions": "Only used when Background Type is \"Background Image\". Recommended size: 1920x800px. Use images with good contrast \u2014 the site adds a 60% dark overlay automatically.",
+        "required": 0,
+        "conditional_logic": [
+          [
+            {
+              "field": "field_hero_background_type",
+              "operator": "==",
+              "value": "image"
+            }
+          ]
+        ],
+        "wrapper": {
+          "width": "50",
+          "class": "",
+          "id": ""
+        },
+        "show_in_graphql": 1,
+        "return_format": "array",
+        "library": "all",
+        "min_width": "",
+        "min_height": "",
+        "min_size": "",
+        "max_width": "",
+        "max_height": "",
+        "max_size": "",
+        "mime_types": "jpg, jpeg, png, webp",
+        "preview_size": "medium"
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "post_type",
+          "operator": "==",
+          "value": "page"
+        }
+      ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Controls the hero/banner section at the top of each page. Subtitle, description, and background style can be customized per page.",
+    "show_in_rest": 0,
+    "show_in_graphql": 1,
+    "graphql_field_name": "heroSection",
+    "map_graphql_types_from_location_rules": 0
+  }
+]

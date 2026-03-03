@@ -1,99 +1,59 @@
 import React from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 
 const quickLinks = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
   { label: 'Services', href: '/services' },
-  { label: 'Our Blogs', href: '/resources/blog' },
+  { label: 'Blog', href: '/resources/blog' },
   { label: 'Contact', href: '/contact' },
 ]
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col self-stretch bg-[#303030]">
-      {/* Main footer content */}
-      <div className="flex flex-col lg:flex-row items-start self-stretch px-6 sm:px-10 md:px-14 2xl:px-[120px] py-10 sm:py-14 md:py-16 2xl:py-[80px] gap-10 lg:gap-0">
+    <footer className="bg-[#1a1a1a] text-white/70">
+      <div className="max-w-[1200px] mx-auto px-6 pt-[60px] pb-7">
+        {/* Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1fr] gap-8 lg:gap-12 mb-12">
+          {/* Brand */}
+          <div>
+            <h4 className="text-lg font-extrabold text-white mb-2">recycling quotes</h4>
+            <p className="text-sm leading-relaxed max-w-[260px]">Quick, Fair, and Recycling for a Sustainable Future.</p>
+          </div>
 
-        {/* Brand column — wide */}
-        <div className="flex flex-col items-start gap-5 lg:w-[38%] 2xl:w-[35%] flex-shrink-0 lg:pr-10">
-          <Link href="/">
-            <Image
-              src="/images/footer-logo.png"
-              alt="Recycling Quote"
-              width={180}
-              height={82}
-              className="w-36 sm:w-44 2xl:w-[180px] h-auto object-contain"
-            />
-          </Link>
-          <span className="text-white text-sm sm:text-base leading-relaxed max-w-[260px]">
-            Waste Not, Want Not Recycling for a Sustainable Future.
-          </span>
-        </div>
-
-        {/* Right 3 columns */}
-        <div className="flex flex-col sm:flex-row items-start flex-1 gap-8 sm:gap-0 sm:justify-between">
-
-          {/* Contact Us */}
-          <div className="flex flex-col items-start gap-4 sm:gap-5">
-            <span className="font-display text-white text-base sm:text-lg 2xl:text-[20px] font-bold">
-              Contact Us
-            </span>
-            <div className="flex flex-col items-start gap-3 2xl:gap-4">
-              <div className="flex items-center gap-3">
-                <Image src="/images/icon-phone.png" alt="" width={28} height={28} className="w-6 h-6 2xl:w-7 2xl:h-7 object-contain flex-shrink-0" />
-                <span className="text-white text-sm sm:text-base">817-946-5655</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <Image src="/images/icon-email.png" alt="" width={28} height={28} className="w-6 h-6 2xl:w-7 2xl:h-7 object-contain flex-shrink-0" />
-                <span className="text-white text-sm sm:text-base">xyz@freerecyclingquotes.com</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <Image src="/images/icon-location.png" alt="" width={28} height={28} className="w-6 h-6 2xl:w-7 2xl:h-7 object-contain flex-shrink-0" />
-                <span className="text-white text-sm sm:text-base">Fort Worth, TX</span>
-              </div>
-            </div>
+          {/* Contact */}
+          <div>
+            <h5 className="text-[13px] font-bold uppercase tracking-[1px] text-white mb-4">Contact Us</h5>
+            <a href="tel:8179465655" className="block text-sm text-white/55 mb-2.5 hover:text-[#2DB446] transition-colors">817-946-5655</a>
+            <a href="mailto:jorge@recyclingquotes.com" className="block text-sm text-white/55 mb-2.5 hover:text-[#2DB446] transition-colors">jorge@recyclingquotes.com</a>
+            <span className="block text-sm text-white/55">Fort Worth, TX</span>
           </div>
 
           {/* Quick Links */}
-          <div className="flex flex-col items-start gap-4 sm:gap-5">
-            <span className="font-display text-white text-base sm:text-lg 2xl:text-[20px] font-bold">
-              Quick Links
-            </span>
-            <div className="flex flex-col items-start gap-2 sm:gap-3">
-              {quickLinks.map((link) => (
-                <Link key={link.href} href={link.href} className="text-white text-sm sm:text-base hover:text-[#4BE576] transition-colors">
-                  {link.label}
-                </Link>
-              ))}
-            </div>
+          <div>
+            <h5 className="text-[13px] font-bold uppercase tracking-[1px] text-white mb-4">Quick Links</h5>
+            {quickLinks.map((link) => (
+              <Link key={link.href} href={link.href} className="block text-sm text-white/55 mb-2.5 hover:text-[#2DB446] transition-colors">
+                {link.label}
+              </Link>
+            ))}
           </div>
 
           {/* Social */}
-          <div className="flex flex-col items-start gap-4 sm:gap-5">
-            <span className="font-display text-white text-base sm:text-lg 2xl:text-[20px] font-bold">
-              Social
-            </span>
-            <div className="flex flex-col items-start gap-2 sm:gap-3">
-              <span className="text-white text-sm sm:text-base">Newsletter</span>
-              <Link href="/terms" className="text-white text-sm sm:text-base hover:text-[#4BE576] transition-colors">
-                Term Of Use
-              </Link>
-            </div>
+          <div>
+            <h5 className="text-[13px] font-bold uppercase tracking-[1px] text-white mb-4">Social</h5>
+            <a href="#" className="block text-sm text-white/55 mb-2.5 hover:text-[#2DB446] transition-colors">Facebook</a>
+            <Link href="/terms" className="block text-sm text-white/55 mb-2.5 hover:text-[#2DB446] transition-colors">Terms Of Use</Link>
           </div>
-
         </div>
-      </div>
 
-      {/* Bottom bar */}
-      <div className="flex flex-col sm:flex-row justify-between items-center self-stretch bg-[#222222] py-4 sm:py-5 px-6 sm:px-10 md:px-14 2xl:px-[120px] gap-3 sm:gap-0">
-        <span className="text-white text-xs sm:text-sm font-bold text-center sm:text-left">
-          © Copyright 2023 Recycling Quote all right reserved
-        </span>
-        <div className="flex shrink-0 items-center gap-2">
-          <Image src="/images/social-fb.png" alt="Facebook" width={29} height={29} className="w-7 h-7 object-contain" />
-          <Image src="/images/social-tw.png" alt="Twitter" width={29} height={29} className="w-7 h-7 object-contain" />
+        {/* Bottom */}
+        <div className="border-t border-white/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-[13px] text-white/35">
+          <span>&copy; Copyright 2025 Recycling Quotes all rights reserved.</span>
+          <div className="flex gap-3">
+            <a href="#" className="w-8 h-8 rounded-full bg-white/[0.08] flex items-center justify-center text-white/50 text-sm hover:bg-[#2DB446] hover:text-white transition-colors">f</a>
+            <a href="#" className="w-8 h-8 rounded-full bg-white/[0.08] flex items-center justify-center text-white/50 text-sm hover:bg-[#2DB446] hover:text-white transition-colors">in</a>
+          </div>
         </div>
       </div>
     </footer>

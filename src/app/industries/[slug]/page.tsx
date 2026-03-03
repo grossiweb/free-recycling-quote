@@ -2,7 +2,8 @@ import React from 'react'
 import { notFound } from 'next/navigation'
 import SubpageTemplate from '@/components/shared/SubpageTemplate'
 import { getWordPressData } from '@/lib/wordpress'
-import { GET_CONTENT_BY_SLUG } from '@/lib/queries'
+import { GET_PAGE } from '@/lib/queries'
+import { fetchHeroDataByUri } from '@/lib/hero'
 import type { Metadata } from 'next'
 
 export const revalidate = 60
@@ -32,10 +33,11 @@ export default async function IndustrySubpage({ params }: { params: Promise<{ sl
   let content = '', featuredImage = undefined
 
   try {
-    const data = await getWordPressData<any>(GET_CONTENT_BY_SLUG, { slug })
-    const page = data?.pages?.nodes?.[0] || data?.posts?.nodes?.[0]
+    const data = await getWordPressData<any>(GET_PAGE, { id: `/industries/${slug}/`, idType: 'URI' })
+    const page = data?.page
     if (page) { content = page.content || ''; featuredImage = page.featuredImage?.node }
   } catch {}
+  const heroData = await fetchHeroDataByUri(`/industries/${slug}/`)
 
   if (!localMeta && !content) notFound()
 
@@ -47,6 +49,7 @@ export default async function IndustrySubpage({ params }: { params: Promise<{ sl
       intro={localMeta?.intro}
       content={content}
       featuredImage={featuredImage}
+      heroData={heroData}
     />
   )
 }

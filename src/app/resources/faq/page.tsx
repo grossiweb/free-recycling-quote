@@ -1,8 +1,20 @@
-'use client'
-import React, { useState } from 'react'
+import React from 'react'
+import FAQAccordion from '@/components/shared/FAQAccordion'
+import WpContent from '@/components/shared/WpContent'
+import PageHero from '@/components/shared/PageHero'
+import { getWordPressData } from '@/lib/wordpress'
+import { GET_PAGE } from '@/lib/queries'
+import { fetchHeroDataByUri } from '@/lib/hero'
 import type { Metadata } from 'next'
 
-const faqs = [
+export const revalidate = 60
+
+export const metadata: Metadata = {
+  title: 'FAQ',
+  description: 'Frequently asked questions about our recycling programs and services.',
+}
+
+const fallbackFaqs = [
   { q: 'What types of businesses do you work with?', a: 'We work with businesses of all sizes — from small retailers to large manufacturers, distributors, schools, government agencies, and construction companies.' },
   { q: 'How do I get a free recycling quote?', a: 'Simply fill out our contact form or call 817-946-5655. We\'ll assess your materials and provide a free, no-obligation quote within 24 hours.' },
   { q: 'What materials do you accept?', a: 'We accept electronics, metal, paper, plastic, cell phones, textiles, organics, chemicals, batteries, light bulbs, pallets, vehicles, and hazardous materials.' },
@@ -13,51 +25,63 @@ const faqs = [
   { q: 'What is the cost of your services?', a: 'Costs vary by material type, volume, and frequency. Many materials — like metals and electronics — can generate revenue. Contact us for a free assessment.' },
 ]
 
-function FAQItem({ q, a }: { q: string; a: string }) {
-  const [open, setOpen] = useState(false)
-  return (
-    <div className="border-b border-gray-100">
-      <button
-        className="flex items-center justify-between w-full py-5 text-left"
-        onClick={() => setOpen(!open)}
-      >
-        <span className="text-[#1F1E1E] font-semibold text-base pr-8">{q}</span>
-        <svg
-          className={`w-5 h-5 text-[#4BE576] flex-shrink-0 transition-transform ${open ? 'rotate-180' : ''}`}
-          fill="none" stroke="currentColor" viewBox="0 0 24 24"
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-        </svg>
-      </button>
-      {open && (
-        <div className="pb-5 text-[#686767] text-base leading-relaxed">
-          {a}
-        </div>
-      )}
-    </div>
-  )
+function parseFaqFromHtml(html: string): Array<{ q: string; a: string }> {
+  const faqs: Array<{ q: string; a: string }> = []
+  const regex = /<h3[^>]*>(.*?)<\/h3>\s*([\s\S]*?)(?=<h3|$)/gi
+  let match
+  while ((match = regex.exec(html)) !== null) {
+    const q = match[1].replace(/<[^>]+>/g, '').trim()
+    const a = match[2].replace(/<\/?p>/g, '').replace(/<!--[^>]*-->/g, '').trim()
+    if (q && a) faqs.push({ q, a })
+  }
+  return faqs
 }
 
-export default function FAQPage() {
+export default async function FAQPage() {
+  let faqs = fallbackFaqs
+  let wpContent = ''
+
+  try {
+    const data = await getWordPressData<any>(GET_PAGE, { id: '/resources/faq/', idType: 'URI' })
+    const page = data?.page
+    if (page?.content) {
+      wpContent = page.content
+      const parsed = parseFaqFromHtml(page.content)
+      if (parsed.length > 0) faqs = parsed
+    }
+  } catch {}
+  const heroData = await fetchHeroDataByUri('/resources/faq/')
+
+  const bgType = heroData.backgroundType || 'gradient'
+  const isDark = bgType === 'dark' || bgType === 'image'
+
   return (
     <div className="bg-white">
-      <section className="bg-gradient-to-br from-neutral-50 to-emerald-50 py-20 lg:py-28">
+      <PageHero backgroundType={bgType} backgroundImage={heroData.backgroundImage}>
         <div className="max-w-[1400px] mx-auto px-6 lg:px-10 text-center">
-          <p className="text-[#686767] text-sm font-bold uppercase tracking-widest mb-3">Resources</p>
-          <h1 className="text-[#1F1E1E] text-4xl lg:text-5xl font-black mb-4">
+          <p className={`text-sm font-bold uppercase tracking-widest mb-3 ${isDark ? 'text-white/70' : 'text-[#686767]'}`}>
+            {heroData.subtitle || 'Resources'}
+          </p>
+          <h1 className={`text-4xl lg:text-5xl font-black mb-4 ${isDark ? 'text-white' : 'text-[#1F1E1E]'}`}>
             Frequently Asked Questions
           </h1>
-          <p className="text-[#686767] text-xl max-w-2xl mx-auto">
-            Everything you need to know about our recycling programs and services.
+          <p className={`text-xl max-w-2xl mx-auto ${isDark ? 'text-white/80' : 'text-[#686767]'}`}>
+            {heroData.description || 'Everything you need to know about our recycling programs and services.'}
           </p>
         </div>
-      </section>
+      </PageHero>
+
+      {wpContent && (
+        <section className="py-16 bg-white">
+          <div className="max-w-[900px] mx-auto px-6 lg:px-10">
+            <WpContent html={wpContent} />
+          </div>
+        </section>
+      )}
 
       <section className="py-20 lg:py-28">
         <div className="max-w-[800px] mx-auto px-6 lg:px-10">
-          {faqs.map((faq, i) => (
-            <FAQItem key={i} q={faq.q} a={faq.a} />
-          ))}
+          <FAQAccordion faqs={faqs} />
         </div>
       </section>
     </div>

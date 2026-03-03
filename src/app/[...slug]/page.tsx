@@ -2,6 +2,7 @@ import React from 'react'
 import { notFound } from 'next/navigation'
 import { getWordPressData } from '@/lib/wordpress'
 import { GET_CONTENT_BY_SLUG, GET_PAGE, GET_ALL_PAGES } from '@/lib/queries'
+import { fetchHeroDataByUri } from '@/lib/hero'
 import SubpageTemplate from '@/components/shared/SubpageTemplate'
 
 export const revalidate = 60
@@ -52,6 +53,7 @@ export default async function DynamicPage({
       }
     } catch {}
   }
+  const heroData = await fetchHeroDataByUri(`/${slugParts.join('/')}/`)
 
   if (!title) notFound()
 
@@ -60,6 +62,7 @@ export default async function DynamicPage({
       title={title}
       content={content || undefined}
       featuredImage={featuredImage}
+      heroData={heroData}
     />
   )
 }

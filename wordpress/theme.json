@@ -1,0 +1,134 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.4/theme.json",
+  "version": 2,
+  "settings": {
+    "color": {
+      "custom": false,
+      "customGradient": false,
+      "palette": [
+        { "name": "Primary Green", "slug": "primary-green", "color": "#4BE576" },
+        { "name": "Dark", "slug": "dark", "color": "#1F1E1E" },
+        { "name": "Body Gray", "slug": "body-gray", "color": "#686767" },
+        { "name": "Light Background", "slug": "light-bg", "color": "#F5F5F5" },
+        { "name": "White", "slug": "white", "color": "#FFFFFF" },
+        { "name": "Footer Dark", "slug": "footer-dark", "color": "#303030" }
+      ]
+    },
+    "typography": {
+      "customFontSize": false,
+      "fontFamilies": [
+        {
+          "name": "SF Pro Display",
+          "slug": "sf-pro-display",
+          "fontFamily": "'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+        },
+        {
+          "name": "Inter",
+          "slug": "inter",
+          "fontFamily": "'Inter', system-ui, -apple-system, sans-serif"
+        }
+      ],
+      "fontSizes": [
+        { "name": "Small", "slug": "small", "size": "14px" },
+        { "name": "Body", "slug": "body", "size": "16px" },
+        { "name": "Large", "slug": "large", "size": "18px" },
+        { "name": "H3", "slug": "h3", "size": "24px" },
+        { "name": "H2", "slug": "h2", "size": "32px" },
+        { "name": "H1", "slug": "h1", "size": "48px" }
+      ]
+    },
+    "spacing": {
+      "customSpacingSize": false,
+      "spacingSizes": [
+        { "name": "XS", "slug": "xs", "size": "8px" },
+        { "name": "Small", "slug": "sm", "size": "16px" },
+        { "name": "Medium", "slug": "md", "size": "32px" },
+        { "name": "Large", "slug": "lg", "size": "64px" },
+        { "name": "XL", "slug": "xl", "size": "96px" }
+      ]
+    },
+    "layout": {
+      "contentSize": "720px",
+      "wideSize": "1200px"
+    },
+    "blocks": {
+      "core/button": {
+        "color": {
+          "custom": false
+        }
+      }
+    }
+  },
+  "styles": {
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--inter)",
+      "fontSize": "var(--wp--preset--font-size--body)",
+      "lineHeight": "1.6"
+    },
+    "color": {
+      "text": "#1F1E1E",
+      "background": "#FFFFFF"
+    },
+    "elements": {
+      "h1": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--sf-pro-display)",
+          "fontWeight": "700",
+          "fontSize": "var(--wp--preset--font-size--h-1)",
+          "lineHeight": "1.15"
+        },
+        "color": { "text": "#1F1E1E" }
+      },
+      "h2": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--sf-pro-display)",
+          "fontWeight": "700",
+          "fontSize": "var(--wp--preset--font-size--h-2)",
+          "lineHeight": "1.2"
+        },
+        "color": { "text": "#1F1E1E" }
+      },
+      "h3": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--sf-pro-display)",
+          "fontWeight": "700",
+          "fontSize": "var(--wp--preset--font-size--h-3)",
+          "lineHeight": "1.3"
+        },
+        "color": { "text": "#1F1E1E" }
+      },
+      "link": {
+        "color": { "text": "#4BE576" },
+        ":hover": { "color": { "text": "#3bd465" } }
+      },
+      "button": {
+        "color": {
+          "background": "#4BE576",
+          "text": "#1E1E1E"
+        },
+        "typography": {
+          "fontWeight": "700",
+          "fontSize": "var(--wp--preset--font-size--body)"
+        },
+        "border": {
+          "radius": "40px"
+        }
+      }
+    },
+    "blocks": {
+      "core/paragraph": {
+        "color": { "text": "#686767" },
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--body)",
+          "lineHeight": "1.7"
+        }
+      },
+      "core/list": {
+        "color": { "text": "#686767" },
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--body)"
+        }
+      }
+    }
+  }
+}
