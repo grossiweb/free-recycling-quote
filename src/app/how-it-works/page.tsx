@@ -58,7 +58,7 @@ export default function HowItWorksPage() {
   return (
     <div>
       {/* Hero */}
-      <section className="pt-0 pb-16 text-center bg-gradient-to-br from-white via-white to-[#e8f5eb]">
+      <section className="pt-5 pb-16 text-center bg-gradient-to-br from-white via-white to-[#e8f5eb]">
         <div className="max-w-[1200px] mx-auto px-6">
           <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'How It Works', href: '/how-it-works' }] satisfies BreadcrumbItem[]} />
           <h1 className="text-[44px] md:text-4xl sm:text-[28px] font-extrabold mb-3">

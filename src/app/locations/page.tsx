@@ -40,7 +40,7 @@ export default function LocationsPage() {
     <div>
       {/* Hero */}
       <section
-        className="pt-0 pb-[60px] text-center"
+        className="pt-5 pb-[60px] text-center"
         style={{ background: 'linear-gradient(165deg, #fff 60%, #e8f5eb 100%)' }}
       >
         <div className="max-w-[1200px] mx-auto px-6">

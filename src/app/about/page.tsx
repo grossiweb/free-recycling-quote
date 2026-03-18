@@ -39,7 +39,7 @@ export default function AboutPage() {
   return (
     <div>
       {/* Hero */}
-      <section className="pt-0 pb-[60px] text-center bg-gradient-to-br from-white via-white to-[#e8f5eb]">
+      <section className="pt-5 pb-[60px] text-center bg-gradient-to-br from-white via-white to-[#e8f5eb]">
         <div className="max-w-[1200px] mx-auto px-6">
           <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'About', href: '/about' }] satisfies BreadcrumbItem[]} />
           <h1 className="text-5xl md:text-4xl sm:text-3xl font-extrabold mb-3">

@@ -63,7 +63,7 @@ export default function ServicesPage() {
   return (
     <div>
       {/* Hero */}
-      <section className="pt-0 pb-[60px] bg-gradient-to-br from-white via-white to-[#e8f5eb]">
+      <section className="pt-5 pb-[60px] bg-gradient-to-br from-white via-white to-[#e8f5eb]">
         <div className="max-w-[1200px] mx-auto px-6">
           <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Services', href: '/services' }] satisfies BreadcrumbItem[]} />
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">

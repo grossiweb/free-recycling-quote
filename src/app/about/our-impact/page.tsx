@@ -54,7 +54,7 @@ export default function OurImpactPage() {
   return (
     <div>
       {/* Hero */}
-      <section className="pt-0 pb-16 text-center bg-gradient-to-br from-white via-white to-[#e8f5eb]">
+      <section className="pt-5 pb-16 text-center bg-gradient-to-br from-white via-white to-[#e8f5eb]">
         <div className="max-w-[1200px] mx-auto px-6">
           <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'About', href: '/about' }, { label: 'Our Impact', href: '/about/our-impact' }] satisfies BreadcrumbItem[]} />
           <h1 className="text-[44px] md:text-4xl sm:text-[28px] font-extrabold mb-3">

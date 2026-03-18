@@ -37,7 +37,7 @@ export default function FAQPage() {
   return (
     <div>
       {/* Hero */}
-      <section className="pt-0 pb-10 text-center">
+      <section className="pt-5 pb-10 text-center">
         <div className="max-w-[1200px] mx-auto px-6">
           <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Resources', href: '/resources' }, { label: 'FAQ', href: '/resources/faq' }] satisfies BreadcrumbItem[]} />
           <h1 className="text-[44px] md:text-4xl sm:text-[28px] font-extrabold mb-3">

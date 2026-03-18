@@ -74,7 +74,7 @@ export default async function MaterialPage({ params }: { params: Promise<{ mater
     const faqs = getMaterialFaqs(material.name, children.length > 0)
     return (
       <div>
-        <section className="pt-0 pb-10 text-center" style={{ background: 'linear-gradient(165deg, #fff 60%, #e8f5eb 100%)' }}>
+        <section className="pt-5 pb-10 text-center" style={{ background: 'linear-gradient(165deg, #fff 60%, #e8f5eb 100%)' }}>
           <div className="max-w-[1200px] mx-auto px-6">
             <nav className="text-sm text-[#737373] mb-6">
               <Link href="/materials" className="hover:text-[#2DB446]">Materials</Link>
@@ -123,7 +123,7 @@ export default async function MaterialPage({ params }: { params: Promise<{ mater
   return (
     <div>
       {/* Hero */}
-      <section className="pt-0 pb-[60px] bg-gradient-to-br from-white via-white to-[#e8f5eb]">
+      <section className="pt-5 pb-[60px] bg-gradient-to-br from-white via-white to-[#e8f5eb]">
         <div className="max-w-[1200px] mx-auto px-6">
           {/* Breadcrumbs */}
           <nav className="flex items-center gap-1.5 text-sm text-[#737373] mb-6 flex-wrap">

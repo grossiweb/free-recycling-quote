@@ -117,7 +117,7 @@ export default function ElectronicsRecyclingHub() {
       <JsonLd data={faqSchema} />
 
       {/* Hero */}
-      <section className="bg-[#1a1a1a] text-white pt-0 pb-20 px-6">
+      <section className="bg-[#1a1a1a] text-white pt-5 pb-20 px-6">
         <div className="max-w-[1200px] mx-auto">
           <Breadcrumbs
             items={[

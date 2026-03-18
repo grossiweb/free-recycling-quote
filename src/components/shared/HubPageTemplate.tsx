@@ -37,7 +37,7 @@ export default function HubPageTemplate({
   return (
     <div>
       {/* Hero */}
-      <section className="pt-0 pb-[60px] text-center" style={{ background: 'linear-gradient(165deg, #fff 60%, #e8f5eb 100%)' }}>
+      <section className="pt-5 pb-[60px] text-center" style={{ background: 'linear-gradient(165deg, #fff 60%, #e8f5eb 100%)' }}>
         <div className="max-w-[1200px] mx-auto px-6">
           {subtitleText && (
             <p className="text-sm font-bold uppercase tracking-[1px] text-[#737373] mb-3">

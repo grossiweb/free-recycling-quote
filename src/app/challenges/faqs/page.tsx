@@ -31,7 +31,7 @@ const faqs = [
 export default function ChallengesHubFaqsPage() {
   return (
     <div>
-      <section className="pt-0 pb-[60px] bg-gradient-to-br from-white via-white to-[#e8f5eb]">
+      <section className="pt-5 pb-[60px] bg-gradient-to-br from-white via-white to-[#e8f5eb]">
         <div className="max-w-[1200px] mx-auto px-6 text-center">
           <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Challenges', href: '/challenges' }, { label: 'FAQs', href: '/challenges/faqs' }] satisfies BreadcrumbItem[]} />
           <h1 className="text-[48px] md:text-[38px] sm:text-[30px] font-extrabold leading-[1.12] mb-4">
