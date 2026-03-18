@@ -38,7 +38,7 @@ export default function HeroSection() {
         </h1>
 
         {/* Subtitle */}
-        <p className="mt-8 sm:mt-10 text-[15px] sm:text-[17px] md:text-[19px] text-[#525252] leading-[1.65] max-w-[640px] mx-auto italic">
+        <p className="mt-8 sm:mt-10 text-[15px] sm:text-[17px] md:text-[19px] text-[#525252] leading-[1.65] max-w-[640px] mx-auto font-semibold">
           Get quick, dependable recycling solutions for end-of-life products, materials, and business waste &mdash; with guidance you can trust.
         </p>
 
