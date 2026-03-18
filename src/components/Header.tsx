@@ -267,12 +267,10 @@ export default function Header() {
 
           {/* Right side */}
           <div className="flex items-center gap-3 z-[1100]">
-            <a href="tel:8179465655" className="hidden xl:block text-[14px] font-semibold text-[#1a1a1a] mr-1 whitespace-nowrap">
+            <a href="tel:8179465655" className="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 bg-[#2DB446] text-[#1a1a1a] font-semibold text-[13px] rounded-full transition-all duration-200 hover:bg-[#1a8a34] hover:-translate-y-px whitespace-nowrap">
+              <span className="material-symbols-outlined text-base">phone</span>
               817-946-5655
             </a>
-            <Link href="/contact" className="hidden sm:inline-flex items-center px-5 py-2.5 bg-[#2DB446] text-white font-semibold text-[13px] rounded-full transition-all duration-200 hover:bg-[#1a8a34] hover:-translate-y-px whitespace-nowrap">
-              Get a Quote
-            </Link>
             <button
               className="xl:hidden flex items-center justify-center w-11 h-11 bg-transparent border-none z-[1100] cursor-pointer"
               onClick={() => setMobileOpen(!mobileOpen)}
