@@ -1,10 +1,23 @@
 import { MetadataRoute } from 'next'
-
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://freerecyclingquote.com'
+import { SITE_URL } from '@/lib/types'
 
 export default function robots(): MetadataRoute.Robots {
   return {
-    rules: { userAgent: '*', allow: '/' },
-    sitemap: `${BASE_URL}/sitemap.xml`,
+    rules: [
+      {
+        userAgent: '*',
+        allow: '/',
+        disallow: ['/api/', '/_next/', '/admin/'],
+      },
+      // AI Crawlers — ALLOW for GEO strategy
+      { userAgent: 'GPTBot', allow: '/' },
+      { userAgent: 'ChatGPT-User', allow: '/' },
+      { userAgent: 'Google-Extended', allow: '/' },
+      { userAgent: 'PerplexityBot', allow: '/' },
+      { userAgent: 'ClaudeBot', allow: '/' },
+      { userAgent: 'Applebot-Extended', allow: '/' },
+      { userAgent: 'cohere-ai', allow: '/' },
+    ],
+    sitemap: `${SITE_URL}/sitemap-index.xml`,
   }
 }

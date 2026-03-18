@@ -1,0 +1,12 @@
+// Barrel export for all data modules
+export * from './services'
+export * from './materials'
+export * from './industries'
+export * from './locations'
+export * from './challenges'
+export * from './service-locations'
+export * from './service-materials'
+export * from './service-industries'
+export * from './service-industry-locations'
+export * from './resolvers'
+export * from './electronics-recycling-locations'

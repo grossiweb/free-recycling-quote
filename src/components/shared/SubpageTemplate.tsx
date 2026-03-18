@@ -1,7 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import WpContent from '@/components/shared/WpContent'
 import FinalCTA from '@/components/shared/FinalCTA'
 import type { HeroData } from '@/lib/types'
 
@@ -10,9 +9,9 @@ interface SubpageTemplateProps {
   category?: string
   categoryHref?: string
   intro?: string
-  content?: string
   featuredImage?: { sourceUrl: string; altText: string }
   heroData?: HeroData
+  children?: React.ReactNode
 }
 
 export default function SubpageTemplate({
@@ -20,9 +19,9 @@ export default function SubpageTemplate({
   category,
   categoryHref,
   intro,
-  content,
   featuredImage,
   heroData,
+  children,
 }: SubpageTemplateProps) {
   const subtitleText = heroData?.subtitle || category
   const descText = heroData?.description || intro
@@ -30,7 +29,7 @@ export default function SubpageTemplate({
   return (
     <div>
       {/* Hero */}
-      <section className="pt-[140px] pb-[60px]" style={{ background: 'linear-gradient(165deg, #fff 60%, #e8f5eb 100%)' }}>
+      <section className="pt-0 pb-[60px]" style={{ background: 'linear-gradient(165deg, #fff 60%, #e8f5eb 100%)' }}>
         <div className="max-w-[1200px] mx-auto px-6">
           {/* Breadcrumb */}
           {category && categoryHref && (
@@ -85,16 +84,7 @@ export default function SubpageTemplate({
       </section>
 
       {/* Content */}
-      {content && (
-        <section className="py-20 bg-white">
-          <div className="max-w-[900px] mx-auto px-6">
-            <WpContent html={content} />
-          </div>
-        </section>
-      )}
-
-      {/* Default placeholder content if no WP content */}
-      {!content && (
+      {children || (
         <section className="py-20 bg-white">
           <div className="max-w-[800px] mx-auto px-6">
             <h2 className="text-[28px] font-extrabold mb-4">Overview</h2>

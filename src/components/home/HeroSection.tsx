@@ -1,40 +1,63 @@
 import React from 'react'
+import Link from 'next/link'
 import Image from 'next/image'
 
 export default function HeroSection() {
   return (
-    <div
-      className="flex flex-col items-center self-stretch bg-cover bg-center py-12 sm:py-16 md:py-20 lg:py-28 2xl:py-[216px] gap-0.5 px-4 sm:px-6 lg:px-8"
-      style={{ backgroundImage: "url('/images/hero-bg.png')" }}
-    >
-      <span className="font-display text-[#1F1E1E] text-2xl sm:text-3xl md:text-4xl lg:text-5xl 2xl:text-[58px] font-bold text-center w-full max-w-[991px] px-4 sm:px-6 lg:px-[39px]">
-        Recycling that helps businesses build a more sustainable future
-      </span>
-      <div className="flex flex-col items-center">
-        <div className="flex flex-col items-start mb-4 sm:mb-6 md:mb-9">
-          <Image
-            src="/images/hero-underline.png"
-            alt=""
-            width={469}
-            height={4}
-            className="w-32 sm:w-60 lg:w-[469px] h-1 self-end object-fill"
-          />
+    <section className="pt-[140px] pb-[60px] bg-gradient-to-br from-white via-white to-[#e8f5eb]">
+      <div className="max-w-[1200px] mx-auto px-6">
+        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+          <div className="flex-1 text-center lg:text-left">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#e8f5eb] rounded-full text-[13px] font-semibold text-[#2DB446] mb-6">
+              <span className="material-symbols-outlined text-base">verified</span>
+              R2 & e-Stewards Certified Network
+            </div>
+            <h1 className="text-[42px] md:text-[36px] sm:text-[28px] font-extrabold leading-[1.12] mb-4">
+              Free Recycling Quotes for Every Business
+            </h1>
+            <p className="text-[17px] text-[#525252] max-w-[520px] leading-[1.65] mb-8 mx-auto lg:mx-0">
+              Get certified recycling for electronics, metals, paper, plastics, pallets, and hazardous materials. Nationwide pickup, compliance documentation, and ESG-ready reporting since 2005.
+            </p>
+            <div className="flex gap-4 justify-center lg:justify-start flex-wrap">
+              <Link href="/contact" className="inline-flex items-center gap-2 px-8 py-3.5 bg-[#2DB446] text-white font-semibold text-[15px] rounded-full transition-all hover:bg-[#1a8a34] hover:-translate-y-0.5 hover:shadow-[0_6px_20px_rgba(45,180,70,.3)]">
+                Get a Quote <span className="material-symbols-outlined text-lg">arrow_forward</span>
+              </Link>
+              <Link href="/schedule-pickup" className="inline-flex items-center gap-2 px-8 py-3.5 border-2 border-[#2DB446] text-[#2DB446] font-semibold text-[15px] rounded-full transition-all hover:bg-[#2DB446] hover:text-white hover:-translate-y-0.5">
+                Schedule a Pickup <span className="material-symbols-outlined text-lg">calendar_month</span>
+              </Link>
+            </div>
+            <div className="flex items-center gap-6 mt-8 justify-center lg:justify-start text-xs text-[#737373]">
+              <span className="flex items-center gap-1"><span className="material-symbols-outlined text-[#2DB446] text-sm">check_circle</span> Free Quotes</span>
+              <span className="flex items-center gap-1"><span className="material-symbols-outlined text-[#2DB446] text-sm">check_circle</span> Certified Recycling</span>
+              <span className="flex items-center gap-1"><span className="material-symbols-outlined text-[#2DB446] text-sm">check_circle</span> Nationwide</span>
+            </div>
+          </div>
+          <div className="relative flex-shrink-0 max-w-[480px] w-full">
+            <Image
+              src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=800&q=80"
+              alt="Recycling facility with sorted materials ready for processing"
+              width={800}
+              height={600}
+              className="rounded-2xl shadow-[0_8px_32px_rgba(0,0,0,.12)] w-full h-auto"
+              priority
+            />
+            <div className="absolute bottom-[-16px] left-6 lg:left-[-16px] bg-white rounded-xl shadow-[0_4px_16px_rgba(0,0,0,.08)] px-4 py-3 flex items-center gap-3">
+              <span className="material-symbols-outlined text-[#2DB446] text-2xl">eco</span>
+              <div>
+                <strong className="text-lg font-extrabold block leading-none">500+</strong>
+                <span className="text-xs text-[#737373]">Businesses Served</span>
+              </div>
+            </div>
+            <div className="absolute top-4 right-[-8px] bg-white rounded-xl shadow-[0_4px_16px_rgba(0,0,0,.08)] px-4 py-3 flex items-center gap-3">
+              <span className="material-symbols-outlined text-[#2DB446] text-2xl">recycling</span>
+              <div>
+                <strong className="text-lg font-extrabold block leading-none">92%</strong>
+                <span className="text-xs text-[#737373]">Recovery Rate</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <span className="text-[#686767] text-base sm:text-lg md:text-xl lg:text-2xl 2xl:text-3xl text-center w-full max-w-[845px] mb-4 sm:mb-6 md:mb-[35px] px-4 sm:px-6">
-          Get quick, dependable recycling solutions for end-of-life products, materials, and business waste — with guidance you can trust.
-        </span>
-        <a
-          href="tel:8179465655"
-          className="flex flex-col items-center bg-[#F8F8F8] text-left py-4 md:py-[23px] px-6 sm:px-10 md:px-16 2xl:px-[130px] gap-2 rounded-2xl border-0"
-        >
-          <span className="text-[#707070] text-sm sm:text-base md:text-lg 2xl:text-xl">
-            Get Started Recycling Today!
-          </span>
-          <span className="text-[#499E62] text-base sm:text-xl md:text-2xl 2xl:text-[29px] font-bold">
-            817-946-5655
-          </span>
-        </a>
       </div>
-    </div>
+    </section>
   )
 }

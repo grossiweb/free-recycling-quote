@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from 'next/link'
-import WpContent from '@/components/shared/WpContent'
 import FinalCTA from '@/components/shared/FinalCTA'
 import type { HeroData } from '@/lib/types'
 
@@ -18,8 +17,8 @@ interface HubPageTemplateProps {
   items: SubItem[]
   ctaText?: string
   ctaHref?: string
-  wpContent?: string
   heroData?: HeroData
+  children?: React.ReactNode
 }
 
 export default function HubPageTemplate({
@@ -29,8 +28,8 @@ export default function HubPageTemplate({
   items,
   ctaText = 'Get a Quote',
   ctaHref = '/contact',
-  wpContent,
   heroData,
+  children,
 }: HubPageTemplateProps) {
   const subtitleText = heroData?.subtitle || subheading
   const descText = heroData?.description || intro
@@ -38,7 +37,7 @@ export default function HubPageTemplate({
   return (
     <div>
       {/* Hero */}
-      <section className="pt-[140px] pb-[60px] text-center" style={{ background: 'linear-gradient(165deg, #fff 60%, #e8f5eb 100%)' }}>
+      <section className="pt-0 pb-[60px] text-center" style={{ background: 'linear-gradient(165deg, #fff 60%, #e8f5eb 100%)' }}>
         <div className="max-w-[1200px] mx-auto px-6">
           {subtitleText && (
             <p className="text-sm font-bold uppercase tracking-[1px] text-[#737373] mb-3">
@@ -62,14 +61,8 @@ export default function HubPageTemplate({
         </div>
       </section>
 
-      {/* WordPress content (if any) */}
-      {wpContent && (
-        <section className="py-16 bg-white">
-          <div className="max-w-[900px] mx-auto px-6">
-            <WpContent html={wpContent} />
-          </div>
-        </section>
-      )}
+      {/* Additional content */}
+      {children}
 
       {/* Sub-items grid */}
       <section className="py-20">

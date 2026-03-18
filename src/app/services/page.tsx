@@ -1,63 +1,41 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import WpContent from '@/components/shared/WpContent'
+import Breadcrumbs from '@/components/shared/Breadcrumbs'
 import FinalCTA from '@/components/shared/FinalCTA'
 import FAQAccordion from '@/components/shared/FAQAccordion'
-import { getWordPressData } from '@/lib/wordpress'
-import { GET_PAGE } from '@/lib/queries'
-import { fetchHeroDataByUri } from '@/lib/hero'
+import { services } from '@/lib/data/services'
+import { SITE_URL } from '@/lib/types'
+import type { BreadcrumbItem } from '@/lib/types'
 import type { Metadata } from 'next'
 
-export const revalidate = 60
+export const revalidate = 3600
 
 export const metadata: Metadata = {
-  title: 'Recycling Services',
-  description: 'Comprehensive recycling services for businesses — pallet recycling, business programs, material solutions, consumer take-back programs, and collection events.',
+  title: 'Recycling Services for Businesses | Recycling Quotes',
+  description: 'Comprehensive recycling services for businesses — pallet recycling, scrap metal, electronics, cardboard, plastics, hazardous waste, shredding, and more.',
+  alternates: { canonical: `${SITE_URL}/services` },
 }
 
-const serviceCards = [
-  {
-    title: 'Pallet Recycling',
-    desc: 'Recover, repair, and recycle wooden and plastic pallets. We handle pickup, sorting, and processing so you can reduce waste and recover value from used pallets.',
-    href: '/services/pallet-recycling',
-    icon: 'pallet',
-    img: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&q=80',
-    alt: 'Stacked wooden pallets in warehouse',
-  },
-  {
-    title: 'Business Recycling Programs',
-    desc: 'Custom-designed recycling programs for your organization. We assess your waste streams, design the program, handle logistics, and provide compliance reporting.',
-    href: '/services/business-recycling-programs',
-    icon: 'apartment',
-    img: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80',
-    alt: 'Modern office with recycling practices',
-  },
-  {
-    title: 'Material Recycling Solutions',
-    desc: 'End-to-end recycling for electronics, metals, plastics, paper, and more. We match your materials with the right processing facilities for maximum recovery.',
-    href: '/services/material-recycling-solutions',
-    icon: 'recycling',
-    img: 'https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?w=600&q=80',
-    alt: 'Material recycling sorting conveyor',
-  },
-  {
-    title: 'Consumer Take Back Programs',
-    desc: 'Help your customers return end-of-life products responsibly. We design branded take-back programs with collection logistics and certified processing.',
-    href: '/services/consumer-take-back-programs',
-    icon: 'swap_horiz',
-    img: 'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&q=80',
-    alt: 'Consumer product return and recycling',
-  },
-  {
-    title: 'Collection Events',
-    desc: 'Organized recycling events for communities, campuses, and corporate locations. We bring the equipment, manage the logistics, and handle all processing.',
-    href: '/services/collection-events',
-    icon: 'event',
-    img: 'https://images.unsplash.com/photo-1567393528677-d6adae7d4a0a?w=600&q=80',
-    alt: 'Community recycling collection event',
-  },
-]
+const categoryLabels: Record<string, string> = {
+  'core-recycling': 'Core Recycling',
+  'equipment-logistics': 'Equipment & Logistics',
+  'specialized': 'Specialized Services',
+  'programs': 'Programs & Consulting',
+}
+
+const categoryOrder = ['core-recycling', 'equipment-logistics', 'specialized', 'programs']
+
+const serviceCards = services
+  .filter((s) => s.isActive)
+  .sort((a, b) => a.sortOrder - b.sortOrder)
+  .map((s) => ({
+    title: s.name,
+    desc: s.tagline,
+    href: `/services/${s.slug}`,
+    icon: s.icon,
+    category: s.category,
+  }))
 
 const steps = [
   { num: 1, title: 'Share Your Needs', desc: 'Tell us about your materials, volumes, and locations. We\u2019ll assess your waste streams and identify recycling opportunities.' },
@@ -81,19 +59,13 @@ const faqs = [
   { q: 'What areas do you serve?', a: 'We provide nationwide service across the United States. Our network of processing partners allows us to support businesses in any location, including multi-site operations with locations in different states.' },
 ]
 
-export default async function ServicesPage() {
-  let wpContent = ''
-  try {
-    const data = await getWordPressData<any>(GET_PAGE, { id: '/services/', idType: 'URI' })
-    wpContent = data?.page?.content || ''
-  } catch {}
-  const heroData = await fetchHeroDataByUri('/services/')
-
+export default function ServicesPage() {
   return (
     <div>
       {/* Hero */}
-      <section className="pt-[140px] pb-[60px] bg-gradient-to-br from-white via-white to-[#e8f5eb]">
+      <section className="pt-0 pb-[60px] bg-gradient-to-br from-white via-white to-[#e8f5eb]">
         <div className="max-w-[1200px] mx-auto px-6">
+          <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Services', href: '/services' }] satisfies BreadcrumbItem[]} />
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
             <div className="flex-1 text-center lg:text-left">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#e8f5eb] rounded-full text-[13px] font-semibold text-[#2DB446] mb-6">
@@ -101,10 +73,10 @@ export default async function ServicesPage() {
                 Trusted by 500+ Businesses
               </div>
               <h1 className="text-[48px] md:text-[38px] sm:text-[30px] font-extrabold leading-[1.12] mb-4">
-                {heroData.subtitle || 'Recycling Services Built for Your Business'}
+                Recycling Services Built for Your Business
               </h1>
               <p className="text-[17px] text-[#525252] max-w-[520px] leading-[1.65] mb-8 mx-auto lg:mx-0">
-                {heroData.description || 'From pallet recovery to full-scale recycling programs, we provide enterprise-grade solutions with ESG-ready documentation and measurable environmental impact.'}
+                From pallet recovery to full-scale recycling programs, we provide enterprise-grade solutions with ESG-ready documentation and measurable environmental impact.
               </p>
               <div className="flex gap-4 justify-center lg:justify-start flex-wrap">
                 <Link href="/contact" className="inline-flex items-center gap-2 px-8 py-3.5 bg-[#2DB446] text-white font-semibold text-[15px] rounded-full transition-all hover:bg-[#1a8a34] hover:-translate-y-0.5 hover:shadow-[0_6px_20px_rgba(45,180,70,.3)]">
@@ -136,40 +108,38 @@ export default async function ServicesPage() {
         </div>
       </section>
 
-      {wpContent && (
-        <section className="py-16 bg-white">
-          <div className="max-w-[900px] mx-auto px-6">
-            <WpContent html={wpContent} />
-          </div>
-        </section>
-      )}
-
-      {/* Services Grid */}
+      {/* Services Grid by Category */}
       <section className="py-20">
         <div className="max-w-[1200px] mx-auto px-6">
           <h2 className="text-[32px] font-extrabold text-center mb-3">Our Services</h2>
           <p className="text-base text-[#737373] text-center max-w-[560px] mx-auto mb-12 leading-relaxed">
             Comprehensive recycling solutions designed to reduce waste, lower costs, and support your ESG goals.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {serviceCards.map((card) => (
-              <Link key={card.href} href={card.href} className="group rounded-2xl overflow-hidden border border-[#ebebeb] bg-white transition-all duration-300 hover:shadow-[0_8px_32px_rgba(0,0,0,.12)] hover:-translate-y-1">
-                <div className="h-[220px] overflow-hidden">
-                  <Image src={card.img} alt={card.alt} width={600} height={400} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+          {categoryOrder.map((cat) => {
+            const cards = serviceCards.filter((c) => c.category === cat)
+            if (cards.length === 0) return null
+            return (
+              <div key={cat} className="mb-14 last:mb-0">
+                <h3 className="text-xl font-bold mb-6 text-[#1a1a1a]">{categoryLabels[cat]}</h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {cards.map((card) => (
+                    <Link key={card.href} href={card.href} className="group rounded-2xl overflow-hidden border border-[#ebebeb] bg-white transition-all duration-300 hover:shadow-[0_8px_32px_rgba(0,0,0,.12)] hover:-translate-y-1">
+                      <div className="p-6">
+                        <div className="w-10 h-10 bg-[#e8f5eb] rounded-lg flex items-center justify-center mb-3">
+                          <span className="material-symbols-outlined text-xl text-[#2DB446]">{card.icon}</span>
+                        </div>
+                        <h4 className="text-lg font-bold mb-2">{card.title}</h4>
+                        <p className="text-sm text-[#525252] leading-relaxed mb-4">{card.desc}</p>
+                        <span className="text-sm font-semibold text-[#2DB446] inline-flex items-center gap-1">
+                          Learn More <span className="material-symbols-outlined text-base">arrow_forward</span>
+                        </span>
+                      </div>
+                    </Link>
+                  ))}
                 </div>
-                <div className="p-6">
-                  <div className="w-10 h-10 bg-[#e8f5eb] rounded-lg flex items-center justify-center mb-3">
-                    <span className="material-symbols-outlined text-xl text-[#2DB446]">{card.icon}</span>
-                  </div>
-                  <h3 className="text-lg font-bold mb-2">{card.title}</h3>
-                  <p className="text-sm text-[#525252] leading-relaxed mb-4">{card.desc}</p>
-                  <span className="text-sm font-semibold text-[#2DB446] inline-flex items-center gap-1">
-                    Learn More <span className="material-symbols-outlined text-base">arrow_forward</span>
-                  </span>
-                </div>
-              </Link>
-            ))}
-          </div>
+              </div>
+            )
+          })}
         </div>
       </section>
 
@@ -181,7 +151,6 @@ export default async function ServicesPage() {
             Getting started is simple. Three steps to a cleaner, more efficient operation.
           </p>
           <div className="relative grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8">
-            {/* Connecting line (desktop only) */}
             <div className="hidden md:block absolute top-[44px] left-[calc(16.67%+32px)] right-[calc(16.67%+32px)] h-[2px] border-t-2 border-dashed border-[#ebebeb]" />
             {steps.map((step) => (
               <div key={step.num} className="text-center relative">

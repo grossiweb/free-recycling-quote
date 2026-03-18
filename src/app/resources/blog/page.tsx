@@ -1,111 +1,105 @@
 import React from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
-import WpContent from '@/components/shared/WpContent'
-import PageHero from '@/components/shared/PageHero'
-import { getWordPressData } from '@/lib/wordpress'
-import { GET_POSTS, GET_PAGE } from '@/lib/queries'
-import { fetchHeroDataByUri } from '@/lib/hero'
+import Breadcrumbs from '@/components/shared/Breadcrumbs'
+import FinalCTA from '@/components/shared/FinalCTA'
 import type { Metadata } from 'next'
-
-export const revalidate = 60
+import { SITE_URL, COMPANY_NAME } from '@/lib/types'
+import type { BreadcrumbItem } from '@/lib/types'
 
 export const metadata: Metadata = {
-  title: 'Blog — Recycling Insights',
+  title: `Blog | ${COMPANY_NAME}`,
   description: 'Industry insights, case studies, and recycling tips to help your business build a more sustainable future.',
+  alternates: { canonical: `${SITE_URL}/resources/blog` },
 }
 
-export default async function BlogPage() {
-  let posts: any[] = []
-  let wpContent = ''
+const blogPosts = [
+  {
+    slug: 'sustainable-recycling-for-businesses',
+    title: 'Journey Into Sustainable Recycling for Businesses',
+    excerpt: 'How forward-thinking companies are rethinking waste management to build circular supply chains and reduce environmental impact.',
+    date: 'March 10, 2026',
+    category: 'Sustainability',
+  },
+  {
+    slug: 'esg-reporting-guide',
+    title: 'ESG Reporting: What Your Stakeholders Want to See',
+    excerpt: 'A practical guide to environmental metrics and sustainability data that investors, customers, and regulators expect in your reports.',
+    date: 'February 28, 2026',
+    category: 'ESG',
+  },
+  {
+    slug: 'reducing-waste-disposal-costs',
+    title: 'Reducing Waste Disposal Costs for Manufacturers',
+    excerpt: 'Practical strategies that help manufacturing operations cut waste disposal costs while improving sustainability outcomes.',
+    date: 'February 15, 2026',
+    category: 'Cost Savings',
+  },
+  {
+    slug: 'electronics-recycling-compliance',
+    title: 'Electronics Recycling Compliance: What You Need to Know',
+    excerpt: 'Understanding federal and state regulations for responsible e-waste disposal and how to stay compliant.',
+    date: 'January 30, 2026',
+    category: 'Compliance',
+  },
+  {
+    slug: 'zero-waste-office-guide',
+    title: 'The Complete Guide to a Zero-Waste Office',
+    excerpt: 'Step-by-step strategies for eliminating waste from your office operations, from paper to electronics.',
+    date: 'January 15, 2026',
+    category: 'Guides',
+  },
+  {
+    slug: 'pallet-recycling-benefits',
+    title: 'Why Pallet Recycling Makes Business Sense',
+    excerpt: 'The economic and environmental benefits of recycling pallets instead of sending them to landfill.',
+    date: 'December 20, 2025',
+    category: 'Materials',
+  },
+]
 
-  try {
-    const [postsData, pageData] = await Promise.all([
-      getWordPressData<any>(GET_POSTS, { first: 12 }),
-      getWordPressData<any>(GET_PAGE, { id: '/resources/blog/', idType: 'URI' }).catch(() => null),
-    ])
-    posts = postsData?.posts?.nodes || []
-    wpContent = pageData?.page?.content || ''
-  } catch {}
-  const heroData = await fetchHeroDataByUri('/resources/blog/')
-
-  const bgType = heroData.backgroundType || 'gradient'
-  const isDark = bgType === 'dark' || bgType === 'image'
-
+export default function BlogPage() {
   return (
-    <div className="bg-white">
-      <PageHero backgroundType={bgType} backgroundImage={heroData.backgroundImage}>
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-10 text-center">
-          <p className={`text-sm font-bold uppercase tracking-widest mb-3 ${isDark ? 'text-white/70' : 'text-[#686767]'}`}>
-            {heroData.subtitle || 'Resources'}
+    <div>
+      {/* Hero */}
+      <section className="pt-0 pb-10 text-center">
+        <div className="max-w-[1200px] mx-auto px-6">
+          <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Resources', href: '/resources' }, { label: 'Blog', href: '/resources/blog' }] satisfies BreadcrumbItem[]} />
+          <h1 className="text-[44px] md:text-4xl sm:text-[28px] font-extrabold mb-3">
+            Blog
+          </h1>
+          <p className="text-[17px] text-[#525252] max-w-[480px] mx-auto">
+            Recycling insights, sustainability tips, and industry news for businesses.
           </p>
-          <h1 className={`text-4xl lg:text-5xl font-black mb-4 ${isDark ? 'text-white' : 'text-[#1F1E1E]'}`}>Blog</h1>
-          <p className={`text-xl max-w-2xl mx-auto ${isDark ? 'text-white/80' : 'text-[#686767]'}`}>
-            {heroData.description || 'Recycling insights, sustainability tips, and industry news.'}
-          </p>
-        </div>
-      </PageHero>
-
-      {wpContent && (
-        <section className="py-16 bg-white">
-          <div className="max-w-[900px] mx-auto px-6 lg:px-10">
-            <WpContent html={wpContent} />
-          </div>
-        </section>
-      )}
-
-      <section className="py-20 lg:py-28">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
-          {posts.length > 0 ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              {posts.map((post: any) => (
-                <article key={post.id} className="flex flex-col bg-white rounded-2xl border border-gray-100 overflow-hidden hover:shadow-md transition-shadow">
-                  <div className="bg-emerald-50 h-48 overflow-hidden">
-                    {post.featuredImage ? (
-                      <Image
-                        src={post.featuredImage.node.sourceUrl}
-                        alt={post.featuredImage.node.altText || post.title}
-                        width={400}
-                        height={192}
-                        className="w-full h-full object-cover"
-                      />
-                    ) : (
-                      <div className="w-full h-full flex items-center justify-center text-emerald-200">
-                        <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                        </svg>
-                      </div>
-                    )}
-                  </div>
-                  <div className="p-6 flex flex-col flex-1">
-                    <p className="text-[#686767] text-xs font-semibold uppercase tracking-wider mb-2">
-                      {new Date(post.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
-                    </p>
-                    <h2 className="text-[#1F1E1E] text-lg font-bold mb-3 line-clamp-2">{post.title}</h2>
-                    {post.excerpt && (
-                      <p className="text-[#686767] text-sm leading-relaxed flex-1 mb-4 line-clamp-3"
-                         dangerouslySetInnerHTML={{ __html: post.excerpt.replace(/<[^>]+>/g, '') }} />
-                    )}
-                    <Link
-                      href={`/resources/blog/${post.slug}`}
-                      className="inline-flex items-center gap-2 text-[#4BE576] font-bold text-sm hover:gap-3 transition-all"
-                    >
-                      Read more
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                      </svg>
-                    </Link>
-                  </div>
-                </article>
-              ))}
-            </div>
-          ) : (
-            <div className="text-center py-20 text-[#686767]">
-              <p className="text-lg">Blog posts coming soon. Check back for recycling insights and sustainability news.</p>
-            </div>
-          )}
         </div>
       </section>
+
+      {/* Blog Cards */}
+      <section className="py-16">
+        <div className="max-w-[1200px] mx-auto px-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {blogPosts.map((post) => (
+              <article key={post.slug} className="flex flex-col bg-white rounded-xl border border-[#ebebeb] overflow-hidden hover:shadow-md hover:-translate-y-[3px] transition-all">
+                <div className="bg-gradient-to-br from-[#e8f5eb] to-[rgba(45,180,70,.15)] h-48 flex items-center justify-center">
+                  <span className="material-symbols-outlined text-[48px] text-[#2DB446]/30">article</span>
+                </div>
+                <div className="p-6 flex flex-col flex-1">
+                  <div className="flex items-center gap-3 mb-3">
+                    <span className="text-[11px] font-bold uppercase tracking-[1px] text-[#2DB446]">{post.category}</span>
+                    <span className="text-xs text-[#737373]">{post.date}</span>
+                  </div>
+                  <h2 className="text-[16px] font-bold mb-2 line-clamp-2">{post.title}</h2>
+                  <p className="text-sm text-[#525252] leading-relaxed flex-1 mb-4 line-clamp-3">{post.excerpt}</p>
+                  <Link href={`/resources/blog/${post.slug}`} className="text-sm font-semibold text-[#2DB446] inline-flex items-center gap-1 hover:gap-2 transition-all">
+                    Read More <span className="material-symbols-outlined text-base">arrow_forward</span>
+                  </Link>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <FinalCTA />
     </div>
   )
 }

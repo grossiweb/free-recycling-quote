@@ -1,63 +1,47 @@
 import React from 'react'
-import WpContent from '@/components/shared/WpContent'
-import PageHero from '@/components/shared/PageHero'
-import { getWordPressData } from '@/lib/wordpress'
-import { GET_PAGE } from '@/lib/queries'
-import { fetchHeroDataByUri } from '@/lib/hero'
-
+import Link from 'next/link'
+import Breadcrumbs from '@/components/shared/Breadcrumbs'
+import FinalCTA from '@/components/shared/FinalCTA'
 import type { Metadata } from 'next'
-
-export const revalidate = 60
+import { SITE_URL, COMPANY_NAME } from '@/lib/types'
+import type { BreadcrumbItem } from '@/lib/types'
 
 export const metadata: Metadata = {
-  title: 'Videos — Recycling Education',
+  title: `Videos | ${COMPANY_NAME}`,
   description: 'Educational videos about our recycling processes, program setup, and sustainability best practices.',
+  alternates: { canonical: `${SITE_URL}/resources/videos` },
 }
 
-export default async function VideosPage() {
-  let content = ''
-
-  try {
-    const data = await getWordPressData<any>(GET_PAGE, { id: '/resources/videos/', idType: 'URI' })
-    content = data?.page?.content || ''
-  } catch {}
-  const heroData = await fetchHeroDataByUri('/resources/videos/')
-
-  const bgType = heroData.backgroundType || 'gradient'
-  const isDark = bgType === 'dark' || bgType === 'image'
-
+export default function VideosPage() {
   return (
-    <div className="bg-white">
-      <PageHero backgroundType={bgType} backgroundImage={heroData.backgroundImage}>
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-10 text-center">
-          <p className={`text-sm font-bold uppercase tracking-widest mb-3 ${isDark ? 'text-white/70' : 'text-[#686767]'}`}>
-            {heroData.subtitle || 'Resources'}
-          </p>
-          <h1 className={`text-4xl lg:text-5xl font-black mb-4 ${isDark ? 'text-white' : 'text-[#1F1E1E]'}`}>Videos</h1>
-          <p className={`text-xl max-w-2xl mx-auto ${isDark ? 'text-white/80' : 'text-[#686767]'}`}>
-            {heroData.description || 'Watch our educational videos about recycling processes and sustainability programs.'}
+    <div>
+      {/* Hero */}
+      <section className="pt-0 pb-10 text-center">
+        <div className="max-w-[1200px] mx-auto px-6">
+          <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Resources', href: '/resources' }, { label: 'Videos', href: '/resources/videos' }] satisfies BreadcrumbItem[]} />
+          <h1 className="text-[44px] md:text-4xl sm:text-[28px] font-extrabold mb-3">
+            Videos
+          </h1>
+          <p className="text-[17px] text-[#525252] max-w-[480px] mx-auto">
+            Watch our educational videos about recycling processes and sustainability programs.
           </p>
         </div>
-      </PageHero>
+      </section>
 
-      {content ? (
-        <section className="py-20 lg:py-28">
-          <div className="max-w-[900px] mx-auto px-6 lg:px-10">
-            <WpContent html={content} />
+      {/* Placeholder */}
+      <section className="py-20">
+        <div className="max-w-[1200px] mx-auto px-6">
+          <div className="text-center py-16">
+            <span className="material-symbols-outlined text-[64px] text-[#2DB446]/40 mb-4">play_circle</span>
+            <p className="text-lg text-[#525252] mb-6">Videos coming soon. Check back for educational recycling content.</p>
+            <Link href="/resources" className="inline-flex items-center gap-2 text-sm font-semibold text-[#2DB446] hover:gap-3 transition-all">
+              Browse All Resources <span className="material-symbols-outlined text-base">arrow_forward</span>
+            </Link>
           </div>
-        </section>
-      ) : (
-        <section className="py-20 lg:py-28">
-          <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
-            <div className="text-center py-16 text-[#686767]">
-              <svg className="w-16 h-16 mx-auto mb-4 text-[#4BE576]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 10l4.553-2.069A1 1 0 0121 8.869v6.262a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-              </svg>
-              <p className="text-lg">Videos coming soon. Check back for educational recycling content.</p>
-            </div>
-          </div>
-        </section>
-      )}
+        </div>
+      </section>
+
+      <FinalCTA />
     </div>
   )
 }

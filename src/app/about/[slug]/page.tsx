@@ -1,53 +1,14 @@
-import React from 'react'
 import { notFound } from 'next/navigation'
-import SubpageTemplate from '@/components/shared/SubpageTemplate'
-import { getWordPressData } from '@/lib/wordpress'
-import { GET_PAGE } from '@/lib/queries'
-import { fetchHeroDataByUri } from '@/lib/hero'
 import type { Metadata } from 'next'
+import { SITE_URL, COMPANY_NAME } from '@/lib/types'
 
-export const revalidate = 60
-
-const aboutMeta: Record<string, { title: string; intro: string }> = {
-  'our-story': { title: 'Our Story', intro: 'How we became a leading recycling solutions provider for businesses nationwide.' },
-  'why-choose-us': { title: 'Why Choose Us', intro: 'What sets us apart — certified processes, zero landfill commitment, and dedicated support.' },
-  'esg-sustainability': { title: 'ESG & Sustainability', intro: 'Our approach to environmental, social, and governance reporting for your business.' },
-  'our-impact': { title: 'Our Impact', intro: 'The measurable difference we make — tons diverted, gallons saved, emissions reduced.' },
-}
-
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
-  const { slug } = await params
-  const meta = aboutMeta[slug]
-  return { title: meta?.title || 'About', description: meta?.intro || '' }
-}
-
-export async function generateStaticParams() {
-  return Object.keys(aboutMeta).map((slug) => ({ slug }))
+export const metadata: Metadata = {
+  title: `About | ${COMPANY_NAME}`,
+  description: `Learn more about ${COMPANY_NAME}.`,
+  alternates: { canonical: `${SITE_URL}/about` },
 }
 
 export default async function AboutSubpage({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = await params
-  const localMeta = aboutMeta[slug]
-  let content = '', featuredImage = undefined
-
-  try {
-    const data = await getWordPressData<any>(GET_PAGE, { id: `/about-2/${slug}/`, idType: 'URI' })
-    const page = data?.page
-    if (page) { content = page.content || ''; featuredImage = page.featuredImage?.node }
-  } catch {}
-  const heroData = await fetchHeroDataByUri(`/about-2/${slug}/`)
-
-  if (!localMeta && !content) notFound()
-
-  return (
-    <SubpageTemplate
-      title={localMeta?.title || slug.replace(/-/g, ' ')}
-      category="About"
-      categoryHref="/about"
-      intro={localMeta?.intro}
-      content={content}
-      featuredImage={featuredImage}
-      heroData={heroData}
-    />
-  )
+  await params
+  notFound()
 }
