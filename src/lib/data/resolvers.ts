@@ -31,10 +31,14 @@ export function resolveIntersection(serviceSlug: string, secondSlug: string): In
   // 1. Try location (most common intersection)
   const location = getLocationBySlug(secondSlug)
   if (location?.isActive) {
-    const junction = getApprovedServiceLocation(serviceSlug, secondSlug)
-    if (junction) {
-      return { type: 'location', service, entity: location, junction }
+    const junction = getApprovedServiceLocation(serviceSlug, secondSlug) ?? {
+      serviceSlug,
+      locationSlug: secondSlug,
+      priorityScore: 5,
+      isApproved: true,
+      contentAngle: `${service.name} services for the ${location.name} metropolitan area.`,
     }
+    return { type: 'location', service, entity: location, junction }
   }
 
   // 2. Try material
@@ -83,15 +87,35 @@ export function resolveTriple(serviceSlug: string, secondSlug: string, thirdSlug
 
 export function getAllIntersectionParams(): Array<{ serviceSlug: string; secondSlug: string }> {
   const params: Array<{ serviceSlug: string; secondSlug: string }> = []
+  const seen = new Set<string>()
 
-  for (const sl of getAllApprovedServiceLocations()) {
-    params.push({ serviceSlug: sl.serviceSlug, secondSlug: sl.locationSlug })
+  // All service × location combos (every service available in every location)
+  for (const service of services.filter(s => s.isActive)) {
+    for (const location of locations.filter(l => l.isActive)) {
+      const key = `${service.slug}/${location.slug}`
+      if (!seen.has(key)) {
+        seen.add(key)
+        params.push({ serviceSlug: service.slug, secondSlug: location.slug })
+      }
+    }
   }
+
+  // Service × material combos (from approved junctions)
   for (const sm of getAllApprovedServiceMaterials()) {
-    params.push({ serviceSlug: sm.serviceSlug, secondSlug: sm.materialSlug })
+    const key = `${sm.serviceSlug}/${sm.materialSlug}`
+    if (!seen.has(key)) {
+      seen.add(key)
+      params.push({ serviceSlug: sm.serviceSlug, secondSlug: sm.materialSlug })
+    }
   }
+
+  // Service × industry combos (from approved junctions)
   for (const si of getAllApprovedServiceIndustries()) {
-    params.push({ serviceSlug: si.serviceSlug, secondSlug: si.industrySlug })
+    const key = `${si.serviceSlug}/${si.industrySlug}`
+    if (!seen.has(key)) {
+      seen.add(key)
+      params.push({ serviceSlug: si.serviceSlug, secondSlug: si.industrySlug })
+    }
   }
 
   return params
